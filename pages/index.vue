@@ -9,7 +9,7 @@
         title="panorama"
         scrolling="no"
         width="100%"
-        height="300"
+        height="500"
         src="https://kuula.co/share/7lcgK/collection/7fyMs"
         style="border: 0px;"
       ></iframe>
@@ -25,6 +25,14 @@
         @blur="$v.name.$touch()"
       ></v-text-field>
       <v-text-field
+        v-model="phone"
+        :error-messages="emailErrors"
+        label="Phone #"
+        required
+        @input="$v.email.$touch()"
+        @blur="$v.email.$touch()"
+      ></v-text-field>
+      <v-text-field
         v-model="email"
         :error-messages="emailErrors"
         label="E-mail"
@@ -36,7 +44,7 @@
         v-model="select"
         :items="items"
         :error-messages="selectErrors"
-        label="Item"
+        label="Reason for contact"
         required
         @change="$v.select.$touch()"
         @blur="$v.select.$touch()"
@@ -80,8 +88,9 @@ export default {
   data: () => ({
     name: null,
     email: null,
+    phone: null,
     select: null,
-    items: ["Item 1", "Item 2", "Item 3", "Item 4"],
+    items: ["Media", "Store Information", "General Info", "Business"],
     checkbox: false
   }),
 
