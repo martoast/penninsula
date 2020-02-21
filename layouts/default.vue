@@ -28,17 +28,15 @@
       </v-container>
     </v-content>
 
-    <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <Footer />
+
   </v-app>
 </template>
 
 <script>
+import Footer from "~/components/Footer.vue";
 export default {
+  components: { Footer },
   data() {
     return {
       clipped: false,
