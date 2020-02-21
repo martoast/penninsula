@@ -19,59 +19,62 @@
 
         <v-responsive min-height="700">
           <v-container>
-            <transition-group
-              tag="v-row"
-              name="fade-transition"
-            >
-              <v-col
-                v-for="project in computedProjects"
-                :key="project.img"
-                cols="12"
-                class="gallery-card"
-                md="4"
-              >
-                <v-hover>
-                  <template v-slot="{ hover }">
-                    <v-card
-                      class="white--text overflow-hidden"
-                      dark
-                      height="300"
-                      hover
-                      @click="overlay = project.img"
-                    >
-                      <v-img
-                        src="https://picsum.photos/510/300?random"
-                        height="100%"
-                      >
 
-                      </v-img>
-                      <v-fade-transition>
-                        <v-overlay
-                          v-if="hover"
-                          absolute
+            <v-item-group>
+              <v-container>
+                <v-row>
+                  <v-col
+                    v-for="project in computedProjects"
+                    :key="project.img"
+                    class="gallery-card"
+                    cols="12"
+                    md="4"
+                  >
+                    <v-hover>
+                      <template v-slot="{ hover }">
+                        <v-card
+                          class="white--text overflow-hidden"
+                          dark
+                          height="300"
+                          hover
+                          @click="overlay = project.img"
                         >
-                          <v-icon large>
-                            mdi-magnify
-                          </v-icon>
-                        </v-overlay>
-                      </v-fade-transition>
-                      <v-slide-y-reverse-transition>
-                        <v-footer
-                          v-if="hover"
-                          absolute
-                          class="justify-center"
-                          height="75"
-                        >
-                          <div class="heading">
-                            {{ project.name }}
-                          </div>
-                        </v-footer>
-                      </v-slide-y-reverse-transition>
-                    </v-card>
-                  </template>
-                </v-hover>
-              </v-col>
-            </transition-group>
+                          <v-img
+                            src="https://picsum.photos/510/300?random"
+                            height="100%"
+                          >
+
+                          </v-img>
+                          <v-fade-transition>
+                            <v-overlay
+                              v-if="hover"
+                              absolute
+                            >
+                              <v-icon large>
+                                mdi-magnify
+                              </v-icon>
+                            </v-overlay>
+                          </v-fade-transition>
+                          <v-slide-y-reverse-transition>
+                            <v-footer
+                              v-if="hover"
+                              absolute
+                              class="justify-center"
+                              height="75"
+                            >
+                              <div class="heading">
+                                {{ project.name }}
+                              </div>
+                            </v-footer>
+                          </v-slide-y-reverse-transition>
+                        </v-card>
+                      </template>
+                    </v-hover>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-item-group>
+
           </v-container>
         </v-responsive>
 
