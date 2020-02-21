@@ -8,14 +8,14 @@
     >
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn @click="$vuetify.goTo('#home')">
+        <v-btn to="/">
           Home
         </v-btn>
-        <v-btn>
+        <v-btn to="/about">
           About
         </v-btn>
 
-        <v-btn>
+        <v-btn to="/contact">
           Contact
         </v-btn>
 

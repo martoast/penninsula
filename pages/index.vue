@@ -1,82 +1,30 @@
 <template>
   <div>
-    <section id="home">
-      <div>
 
-        <div>
-          <iframe
-            allowfullscreen="true"
-            title="panorama"
-            scrolling="no"
-            width="100%"
-            height="500"
-            src="https://kuula.co/share/7lcgK/collection/7fyMs"
-            style="border: 0px;"
-          ></iframe>
-        </div>
+    <div>
 
-      </div>
-    </section>
+      <iframe
+        allowfullscreen="true"
+        title="panorama"
+        scrolling="no"
+        width="100%"
+        height="500"
+        src="https://kuula.co/share/7lcgK/collection/7fyMs"
+        style="border: 0px;"
+      ></iframe>
 
-    <form>
-      <v-text-field
-        v-model="name"
-        :error-messages="nameErrors"
-        :counter="10"
-        label="Name"
-        required
-        @input="$v.name.$touch()"
-        @blur="$v.name.$touch()"
-      ></v-text-field>
-      <v-text-field
-        v-model="phone"
-        :error-messages="emailErrors"
-        label="Phone #"
-        required
-        @input="$v.email.$touch()"
-        @blur="$v.email.$touch()"
-      ></v-text-field>
-      <v-text-field
-        v-model="email"
-        :error-messages="emailErrors"
-        label="E-mail"
-        required
-        @input="$v.email.$touch()"
-        @blur="$v.email.$touch()"
-      ></v-text-field>
-      <v-select
-        v-model="select"
-        :items="items"
-        :error-messages="selectErrors"
-        label="Reason for contact"
-        required
-        @change="$v.select.$touch()"
-        @blur="$v.select.$touch()"
-      ></v-select>
-      <v-checkbox
-        v-model="checkbox"
-        :error-messages="checkboxErrors"
-        label="Do you agree?"
-        required
-        @change="$v.checkbox.$touch()"
-        @blur="$v.checkbox.$touch()"
-      ></v-checkbox>
-      <v-row justify="end">
-        <v-btn
-          class="mr-4"
-          @click="submit"
-        >submit</v-btn>
-        <div v-if="name && email && select != null">
-          <v-btn @click="clear">clear</v-btn>
-        </div>
-      </v-row>
-    </form>
+    </div>
+    <div>
+      <Services />
+    </div>
+
   </div>
 </template>
 
 <script>
 import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
+import Services from "~/components/Services.vue";
 
 export default {
   mixins: [validationMixin],
@@ -91,6 +39,7 @@ export default {
       }
     }
   },
+  components: { Services },
 
   data: () => ({
     name: null,
