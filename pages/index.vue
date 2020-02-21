@@ -2,7 +2,6 @@
   <div>
 
     <div>
-      <h3>Boost testing</h3>
 
       <iframe
         allowfullscreen="true"
