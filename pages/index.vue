@@ -1,19 +1,23 @@
 <template>
   <div>
-    <h1 class="headline">
-      Welcome to Peninsula
-    </h1>
-    <div>
-      <iframe
-        allowfullscreen="true"
-        title="panorama"
-        scrolling="no"
-        width="100%"
-        height="500"
-        src="https://kuula.co/share/7lcgK/collection/7fyMs"
-        style="border: 0px;"
-      ></iframe>
-    </div>
+    <section id="home">
+      <div>
+
+        <div>
+          <iframe
+            allowfullscreen="true"
+            title="panorama"
+            scrolling="no"
+            width="100%"
+            height="500"
+            src="https://kuula.co/share/7lcgK/collection/7fyMs"
+            style="border: 0px;"
+          ></iframe>
+        </div>
+
+      </div>
+    </section>
+
     <form>
       <v-text-field
         v-model="name"
@@ -58,7 +62,10 @@
         @blur="$v.checkbox.$touch()"
       ></v-checkbox>
       <v-row justify="end">
-        <v-btn class="mr-4" @click="submit">submit</v-btn>
+        <v-btn
+          class="mr-4"
+          @click="submit"
+        >submit</v-btn>
         <div v-if="name && email && select != null">
           <v-btn @click="clear">clear</v-btn>
         </div>
