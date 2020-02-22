@@ -1,23 +1,46 @@
 <template>
   <div>
+    <section>
+      <div>
+        <v-parallax
+          dark
+          src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+          height="800"
+        >
+          <v-row align="center" justify="end">
+            <v-col class="text-center" cols="12"></v-col>
+            <v-row align="center" justify="center">
+              <v-col class="text-center" cols="12">
+                <h1 class="display-1 font-weight-thin mb-4">Vuetify.js</h1>
+                <h4 class="subheading">Build your application today!</h4>
+              </v-col>
+            </v-row>
+            <v-card>
+              <netlify />
+            </v-card>
+          </v-row>
+        </v-parallax>
+      </div>
+    </section>
+    <section>
+      <div>
+        <iframe
+          allowfullscreen="true"
+          title="panorama"
+          scrolling="no"
+          width="100%"
+          height="700"
+          src="https://kuula.co/share/7lcgK/collection/7fyMs"
+          style="border: 0px;"
+        ></iframe>
+      </div>
+    </section>
 
-    <div>
+    <netlify />
 
-      <iframe
-        allowfullscreen="true"
-        title="panorama"
-        scrolling="no"
-        width="100%"
-        height="700"
-        src="https://kuula.co/share/7lcgK/collection/7fyMs"
-        style="border: 0px;"
-      ></iframe>
-
-    </div>
     <div>
       <Services />
     </div>
-
   </div>
 </template>
 
@@ -26,6 +49,7 @@ import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
 import Services from "~/components/Services.vue";
 import Footer from "~/components/Footer.vue";
+import netlify from "~/components/netlify-form.vue";
 
 export default {
   mixins: [validationMixin],
@@ -40,7 +64,7 @@ export default {
       }
     }
   },
-  components: { Services, Footer },
+  components: { Services, Footer, netlify },
 
   data: () => ({
     name: null,
