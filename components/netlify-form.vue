@@ -1,5 +1,5 @@
 <template>
-  <v-form
+  <form
     name="contactus"
     action="/thanks"
     method="post"
@@ -52,7 +52,8 @@
         </v-row>
       </v-card>
     </v-container>
-  </v-form>
+  </form>
+
 </template>
 
 
