@@ -1,5 +1,5 @@
 <template>
-  <v-form>
+  <v-form netlify>
     <v-container fill-height>
       <v-card max-width="400">
         <v-row>
