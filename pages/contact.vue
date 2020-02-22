@@ -38,45 +38,52 @@
     </section>
 
     <section>
-      <v-form>
-        <v-container>
+      <v-form netlify>
+        <v-container fill-height>
+
           <v-row>
             <v-col cols="12">
+
               <v-text-field
-                outlined
                 label="Your Name*"
+                for="name"
+                type="text"
+                name="name"
+                outlined
+                required
               />
             </v-col>
             <v-col cols="12">
+
               <v-text-field
-                outlined
                 label="Your Email*"
-              />
-            </v-col>
-            <v-col cols="12">
-              <v-text-field
+                for="email"
+                type="email"
+                name="email"
+                required
                 outlined
-                label="Subject"
               />
             </v-col>
+
             <v-col cols="12">
+
               <v-textarea
+                label="Your Message*"
+                for="message"
+                name="message"
+                required
                 outlined
-                label="Your Message"
               />
             </v-col>
 
             <v-col text-center>
               <v-btn
-                :block="$vuetify.breakpoint.smAndDown"
-                class="px-5 text-capitalize"
-                color="secondary"
-                large
-              >
-                Send
-              </v-btn>
+                type="submit"
+                value="Send message"
+              >Send</v-btn>
             </v-col>
           </v-row>
+
         </v-container>
       </v-form>
     </section>
