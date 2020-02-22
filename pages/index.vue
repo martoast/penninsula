@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>test8</h1>
 
     <section>
       <div>
@@ -16,8 +15,6 @@
       </div>
     </section>
 
-    <contact />
-
     <div>
       <Services />
     </div>
@@ -29,8 +26,6 @@ import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
 import Services from "~/components/Services.vue";
 import Footer from "~/components/Footer.vue";
-
-import contact from "~/components/contact.vue";
 
 export default {
   layout: "landing",
@@ -46,7 +41,7 @@ export default {
       }
     }
   },
-  components: { Services, Footer, contact },
+  components: { Services, Footer },
 
   data: () => ({
     name: null,
