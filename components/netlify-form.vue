@@ -1,5 +1,11 @@
 <template>
-  <v-form netlify>
+  <v-form
+    name="contactus"
+    action="/thanks"
+    method="post"
+    netlify
+    netlify-honeypot="bot-field"
+  >
     <v-container fill-height>
       <v-card max-width="400">
         <v-row>

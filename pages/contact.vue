@@ -38,7 +38,13 @@
     </section>
 
     <section>
-      <v-form netlify>
+      <v-form
+        name="contactus"
+        action="/thanks"
+        method="post"
+        netlify
+        netlify-honeypot="bot-field"
+      >
         <v-container fill-height>
 
           <v-row>
