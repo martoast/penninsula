@@ -36,7 +36,7 @@
       </div>
     </section>
 
-    <netlify />
+    <contact />
 
     <div>
       <Services />
@@ -50,6 +50,7 @@ import { required, maxLength, email } from "vuelidate/lib/validators";
 import Services from "~/components/Services.vue";
 import Footer from "~/components/Footer.vue";
 import netlify from "~/components/netlify-form.vue";
+import contact from "~/components/contact.vue";
 
 export default {
   mixins: [validationMixin],
@@ -64,7 +65,7 @@ export default {
       }
     }
   },
-  components: { Services, Footer, netlify },
+  components: { Services, Footer, netlify, contact },
 
   data: () => ({
     name: null,
