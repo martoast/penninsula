@@ -12,8 +12,16 @@
       value="contactus"
     />
     <v-container fill-height>
-      <v-card max-width="400">
+
+      <v-card
+        max-width="400"
+        color="rgb(0, 0, 0, 0.2)"
+      >
         <v-row>
+          <v-row justify="center">
+            <h1 class="display-1 font-weight-thin mb-4">Contact Us</h1>
+
+          </v-row>
           <v-col cols="12">
 
             <div>
@@ -63,6 +71,8 @@
             <v-btn
               type="submit"
               value="Send message"
+              block
+              color="success"
             >Send</v-btn>
           </v-col>
         </v-row>
