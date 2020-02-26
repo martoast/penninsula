@@ -23,10 +23,13 @@
       </v-container>
 
     </section>
+    <section>
+      <div>
+        <Blog />
+      </div>
 
-    <div>
-      <Services />
-    </div>
+    </section>
+
   </div>
 </template>
 
@@ -34,6 +37,7 @@
 import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
 import Services from "~/components/Services.vue";
+import Blog from "~/components/Blog.vue";
 import Footer from "~/components/Footer.vue";
 import SlideGroup from "~/components/SlideGroup.vue";
 
@@ -51,7 +55,7 @@ export default {
       }
     }
   },
-  components: { Services, Footer, SlideGroup },
+  components: { Services, Footer, SlideGroup, Blog },
 
   data: () => ({
     name: null,
