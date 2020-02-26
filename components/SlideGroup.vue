@@ -17,15 +17,19 @@
             :key="n"
             v-slot:default="{ active, toggle }"
           >
-            <v-img
-              :src="n"
-              :input-value="active"
-              @click="toggle"
-              height="185"
-              width="200"
-            >
+            <v-card>
+              <v-img
+                :src="n"
+                :input-value="active"
+                @click="toggle"
+                height="185"
+                width="200"
+              >
 
-            </v-img>
+              </v-img>
+
+            </v-card>
+
           </v-slide-item>
         </v-slide-group>
       </v-sheet>

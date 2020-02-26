@@ -32,6 +32,7 @@
                 name="name"
                 outlined
                 required
+                color="white"
               />
             </div>
 
@@ -46,6 +47,7 @@
                 name="email"
                 required
                 outlined
+                color="white"
               />
 
             </div>
@@ -61,6 +63,7 @@
                 name="message"
                 required
                 outlined
+                color="white"
               />
 
             </div>
