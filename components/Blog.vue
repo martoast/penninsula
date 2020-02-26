@@ -39,19 +39,19 @@ export default {
   data: () => ({
     cards: [
       {
-        title: "Pre-fab homes",
+        title: "Best dining in town",
         src:
           "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/Spot-4_Mobile_m4_20191104111144.jpg?yocs=D_H_",
         flex: 12
       },
       {
-        title: "Favorite road trips",
+        title: "New Styles",
         src:
           "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/LUXE_Spot-2_d4_20191029120312.jpg?yocs=D_H_",
         flex: 6
       },
       {
-        title: "Best airlines",
+        title: "Exclusives",
         src:
           "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/NEW-NEXT-Spot-1_Mobile_m4_20191202142201.jpg?yocs=D_H_",
         flex: 6

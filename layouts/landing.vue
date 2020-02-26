@@ -1,43 +1,27 @@
 <template>
-  <v-app dark>
+  <v-app>
 
-    <v-app-bar
-      fixed
-      app
-      color="blue-grey"
-    >
+    <v-toolbar color="blue-grey">
+      <v-toolbar-title>Peninsula Version 0.7</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items>
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
-          to="/"
+          v-for="item in menu"
+          :key="item.icon"
+          :to="item.link"
           text
-        >
-          Home
-        </v-btn>
-        <v-btn
-          to="/about"
-          text
-        >
-          About
-        </v-btn>
-
-        <v-btn
-          to="/contact"
-          text
-        >
-          Contact
-        </v-btn>
-
+        >{{ item.title }}</v-btn>
       </v-toolbar-items>
 
-    </v-app-bar>
+      <v-app-bar-nav-icon
+        @click.stop="drawer = !drawer"
+        class="hidden-md-and-up"
+      ></v-app-bar-nav-icon>
+
+    </v-toolbar>
+
     <div>
 
-      <!-- <v-parallax
-        dark
-        src="https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/FashionValley_Hero_Mobile_m4_20191205151447.jpg?yocs=D_H_"
-        height="800"
-      > -->
       <v-img
         src="https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/FashionValley_Hero_Mobile_m4_20191205151447.jpg?yocs=D_H_"
         height="800"
@@ -78,7 +62,6 @@
 
       </v-img>
 
-      <!-- </v-parallax> -->
     </div>
 
     <v-content>
@@ -88,6 +71,36 @@
     </v-content>
 
     <Footer />
+    <div class="hidden-md-and-up">
+      <v-container class="fill-height">
+
+        <v-navigation-drawer
+          v-model="drawer"
+          absolute
+          temporary
+          right
+          color="blue-grey"
+        >
+          <v-list>
+            <v-list-item
+              v-for="item in items"
+              :key="item.title"
+              link
+              :to="item.link"
+            >
+              <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+
+        </v-navigation-drawer>
+      </v-container>
+    </div>
 
   </v-app>
 </template>
@@ -100,8 +113,25 @@ export default {
 
   data() {
     return {
-      title: ""
+      title: "",
+      drawerRight: null,
+      drawer: null,
+      menu: [
+        { icon: "home", title: "Home", link: "/" },
+        { icon: "info", title: "About", link: "/about" },
+        { icon: "warning", title: "Contact", link: "/contact" }
+      ],
+      items: [
+        { title: "home", icon: "mdi-view-dashboard", link: "/" },
+        { title: "about", icon: "mdi-account", link: "/about" },
+        { title: "contact", icon: "mdi-gavel", link: "/contact" }
+      ]
     };
+  },
+  methods: {
+    menuItems() {
+      return this.menu;
+    }
   }
 };
 </script>
