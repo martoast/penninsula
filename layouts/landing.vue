@@ -4,6 +4,7 @@
     <v-app-bar
       fixed
       app
+      color="blue-grey"
     >
       <v-spacer></v-spacer>
       <v-toolbar-items>

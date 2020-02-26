@@ -1,18 +1,27 @@
 <template>
   <div>
-
     <section>
       <div>
-        <iframe
-          allowfullscreen="true"
-          title="panorama"
-          scrolling="no"
-          width="100%"
-          height="700"
-          src="https://kuula.co/share/7lcgK/collection/7fyMs"
-          style="border: 0px;"
-        ></iframe>
+        <SlideGroup />
+
       </div>
+    </section>
+
+    <section>
+      <v-container pt-9>
+        <div>
+          <iframe
+            allowfullscreen="true"
+            title="panorama"
+            scrolling="no"
+            width="100%"
+            height="700"
+            src="https://kuula.co/share/7lcgK/collection/7fyMs"
+            style="border: 0px;"
+          ></iframe>
+        </div>
+      </v-container>
+
     </section>
 
     <div>
@@ -26,6 +35,7 @@ import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
 import Services from "~/components/Services.vue";
 import Footer from "~/components/Footer.vue";
+import SlideGroup from "~/components/SlideGroup.vue";
 
 export default {
   layout: "landing",
@@ -41,13 +51,14 @@ export default {
       }
     }
   },
-  components: { Services, Footer },
+  components: { Services, Footer, SlideGroup },
 
   data: () => ({
     name: null,
     email: null,
     phone: null,
     select: null,
+
     items: ["Media", "Store Information", "General Info", "Business"],
     checkbox: false
   }),
