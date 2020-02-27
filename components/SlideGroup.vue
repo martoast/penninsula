@@ -4,11 +4,12 @@
     <div>
       <v-sheet
         class="mx-auto"
-        max-width="100%"
+        max-width="800"
+        elevation="8"
         height="50%"
+        color="blue-grey lighten-5"
       >
         <v-slide-group
-          multiple
           show-arrows
           light
         >
@@ -17,13 +18,15 @@
             :key="n"
             v-slot:default="{ active, toggle }"
           >
-            <v-card>
+            <v-card
+              color="blue-grey lighten-5"
+              height="100"
+              width="100"
+            >
               <v-img
                 :src="n"
                 :input-value="active"
                 @click="toggle"
-                height="185"
-                width="200"
               >
 
               </v-img>
