@@ -1,7 +1,11 @@
 <template>
   <v-app>
-
-    <v-toolbar color="blue-grey">
+    <v-app-bar
+      :clipped-left="clipped"
+      color="blue-grey"
+      fixed
+      app
+    >
       <v-toolbar-title>Peninsula Version 0.7</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -13,12 +17,14 @@
         >{{ item.title }}</v-btn>
       </v-toolbar-items>
 
-      <v-app-bar-nav-icon
-        @click.stop="drawer = !drawer"
+      <v-btn
+        icon
+        @click.stop="rightDrawer = !rightDrawer"
         class="hidden-md-and-up"
-      ></v-app-bar-nav-icon>
-
-    </v-toolbar>
+      >
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+    </v-app-bar>
 
     <div>
 
@@ -55,28 +61,17 @@
       <v-container>
 
         <v-navigation-drawer
-          v-model="drawer"
-          disable-resize-watcher
-          absolute
-          right
-          color="blue-grey"
+          v-model="rightDrawer"
+          :right="right"
+          temporary
+          fixed
         >
           <v-list>
-            <v-list-item
-              v-for="item in items"
-              :key="item.title"
-              :to="item.link"
-            >
-              <v-list-item-icon>
-                <v-icon>{{ item.icon }}</v-icon>
-              </v-list-item-icon>
+            <v-list-item @click.native="right = !right">
 
-              <v-list-item-content>
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item-content>
+              <v-list-item-title>shit</v-list-item-title>
             </v-list-item>
           </v-list>
-
         </v-navigation-drawer>
       </v-container>
     </div>
@@ -93,6 +88,10 @@ export default {
   data() {
     return {
       title: "",
+      right: true,
+      rightDrawer: false,
+      fixed: false,
+      clipped: false,
 
       drawer: null,
       menu: [

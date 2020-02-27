@@ -18,7 +18,7 @@
                   :src="card.src"
                   class="white--text align-end"
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                  max-height="550px"
+                  max-height="450px"
                   min-height="300"
                 >
                   <v-card-title v-text="card.title"></v-card-title>
