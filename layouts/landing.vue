@@ -28,29 +28,9 @@
       >
         <v-row
           align="center"
-          justify="end"
-          class="`d-flex justify-space-around mb-6`"
+          justify="center"
         >
-          <v-col
-            class="text-center"
-            cols="12"
-          ></v-col>
-          <div class="`d-flex justify-space-around mb-6`">
-            <v-container pt-12>
-              <v-row
-                align="center"
-                justify="center"
-              >
-                <v-col
-                  class="text-center"
-                  cols="12"
-                >
-                  <h1 class="display-1 font-weight-thin mb-4">Vuetify.js</h1>
-                  <h4 class="subheading">Build your application today!</h4>
-                </v-col>
-              </v-row>
-            </v-container>
-          </div>
+
           <div>
             <v-container pt-12>
               <netlify />
@@ -72,12 +52,12 @@
 
     <Footer />
     <div class="hidden-md-and-up">
-      <v-container class="fill-height">
+      <v-container>
 
         <v-navigation-drawer
           v-model="drawer"
+          disable-resize-watcher
           absolute
-          temporary
           right
           color="blue-grey"
         >
@@ -85,7 +65,6 @@
             <v-list-item
               v-for="item in items"
               :key="item.title"
-              link
               :to="item.link"
             >
               <v-list-item-icon>
@@ -114,7 +93,7 @@ export default {
   data() {
     return {
       title: "",
-      drawerRight: null,
+
       drawer: null,
       menu: [
         { icon: "home", title: "Home", link: "/" },

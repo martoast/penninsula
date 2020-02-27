@@ -13,10 +13,7 @@
     />
     <v-container fill-height>
 
-      <v-card
-        max-width="400"
-        color="rgb(0, 0, 0, 0.2)"
-      >
+      <v-card color="rgb(0, 0, 0, 0.2)">
         <v-row>
           <v-row justify="center">
             <h1 class="display-1 font-weight-thin mb-4">Contact Us</h1>
@@ -69,15 +66,21 @@
             </div>
 
           </v-col>
+          <div>
+            <v-container>
 
-          <v-col text-center>
-            <v-btn
-              type="submit"
-              value="Send message"
-              block
-              color="success"
-            >Send</v-btn>
-          </v-col>
+              <v-col text-center>
+                <v-btn
+                  type="submit"
+                  value="Send message"
+                  color="success"
+                >Send</v-btn>
+              </v-col>
+
+            </v-container>
+
+          </div>
+
         </v-row>
       </v-card>
     </v-container>

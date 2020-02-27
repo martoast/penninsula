@@ -5,7 +5,7 @@
 
         <v-container
           fluid
-          pt-12
+          pt-6
         >
           <v-row dense>
             <v-col
@@ -19,6 +19,7 @@
                   class="white--text align-end"
                   gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
                   max-height="550px"
+                  min-height="300"
                 >
                   <v-card-title v-text="card.title"></v-card-title>
                 </v-img>
