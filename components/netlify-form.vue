@@ -1,90 +1,92 @@
 <template>
-  <form
-    name="contactus"
-    action="/thanks"
-    method="post"
-    netlify
-    netlify-honeypot="bot-field"
-  >
-    <input
-      type="hidden"
-      name="form-name"
-      value="contactus"
-    />
-    <v-container fill-height>
+  <v-container pt-12>
+    <form
+      name="contactus"
+      action="/thanks"
+      method="post"
+      netlify
+      netlify-honeypot="bot-field"
+    >
+      <input
+        type="hidden"
+        name="form-name"
+        value="contactus"
+      />
+      <v-container fill-height>
 
-      <v-card color="rgb(0, 0, 0, 0.2)">
-        <v-row>
-          <v-row justify="center">
-            <h1 class="display-1 font-weight-thin mb-4">Contact Us</h1>
+        <v-card color="rgb(0, 0, 0, 0.2)">
+          <v-row>
+            <v-row justify="center">
+              <h1 class="display-1 font-weight-thin mb-4">Contact Us</h1>
+
+            </v-row>
+            <v-col cols="12">
+
+              <div>
+                <v-text-field
+                  label="Your Name*"
+                  for="name"
+                  type="text"
+                  name="name"
+                  outlined
+                  required
+                  color="white"
+                />
+              </div>
+
+            </v-col>
+            <v-col cols="12">
+
+              <div>
+                <v-text-field
+                  label="Your Email*"
+                  for="email"
+                  type="email"
+                  name="email"
+                  required
+                  outlined
+                  color="white"
+                />
+
+              </div>
+
+            </v-col>
+
+            <v-col cols="12">
+
+              <div>
+                <v-textarea
+                  label="Your Message*"
+                  for="message"
+                  name="message"
+                  required
+                  outlined
+                  color="white"
+                />
+
+              </div>
+
+            </v-col>
+            <div>
+              <v-container>
+
+                <v-col text-center>
+                  <v-btn
+                    type="submit"
+                    value="Send message"
+                    color="success"
+                  >Send</v-btn>
+                </v-col>
+
+              </v-container>
+
+            </div>
 
           </v-row>
-          <v-col cols="12">
-
-            <div>
-              <v-text-field
-                label="Your Name*"
-                for="name"
-                type="text"
-                name="name"
-                outlined
-                required
-                color="white"
-              />
-            </div>
-
-          </v-col>
-          <v-col cols="12">
-
-            <div>
-              <v-text-field
-                label="Your Email*"
-                for="email"
-                type="email"
-                name="email"
-                required
-                outlined
-                color="white"
-              />
-
-            </div>
-
-          </v-col>
-
-          <v-col cols="12">
-
-            <div>
-              <v-textarea
-                label="Your Message*"
-                for="message"
-                name="message"
-                required
-                outlined
-                color="white"
-              />
-
-            </div>
-
-          </v-col>
-          <div>
-            <v-container>
-
-              <v-col text-center>
-                <v-btn
-                  type="submit"
-                  value="Send message"
-                  color="success"
-                >Send</v-btn>
-              </v-col>
-
-            </v-container>
-
-          </div>
-
-        </v-row>
-      </v-card>
-    </v-container>
-  </form>
+        </v-card>
+      </v-container>
+    </form>
+  </v-container>
 
 </template>
 
