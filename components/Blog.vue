@@ -13,18 +13,30 @@
               :key="card.title"
               :cols="card.flex"
             >
-              <v-card>
-                <v-img
-                  :src="card.src"
-                  class="white--text align-end"
-                  gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-                  max-height="450px"
-                  min-height="300"
-                >
-                  <v-card-title v-text="card.title"></v-card-title>
-                </v-img>
+              <v-hover v-slot:default="{ hover }">
+                <v-card :elevation="hover ? 16 : 2">
+                  <v-img
+                    :src="card.src"
+                    class="white--text align-end"
+                    gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                    max-height="450px"
+                    min-height="300"
+                  >
+                    <v-expand-transition>
+                      <div
+                        v-if="hover"
+                        class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
+                        style="height: 100%;"
+                      >
 
-              </v-card>
+                      </div>
+                    </v-expand-transition>
+                    <v-card-title v-text="card.title"></v-card-title>
+                  </v-img>
+
+                </v-card>
+              </v-hover>
+
             </v-col>
           </v-row>
         </v-container>
@@ -61,3 +73,13 @@ export default {
   })
 };
 </script>
+<style>
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: 0.5;
+  position: absolute;
+  width: 100%;
+}
+</style>

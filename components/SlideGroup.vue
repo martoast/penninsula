@@ -18,20 +18,24 @@
             :key="n"
             v-slot:default="{ active, toggle }"
           >
-            <v-card
-              color="blue-grey lighten-5"
-              height="100"
-              width="100"
-            >
-              <v-img
-                :src="n"
-                :input-value="active"
-                @click="toggle"
+            <v-hover v-slot:default="{ hover }">
+              <v-card
+                color="blue-grey lighten-5"
+                height="100"
+                width="100"
+                :elevation="hover ? 12 : 2"
+                :class="{ 'on-hover': hover }"
               >
+                <v-img
+                  :src="n"
+                  :input-value="active"
+                  @click="toggle"
+                >
 
-              </v-img>
+                </v-img>
 
-            </v-card>
+              </v-card>
+            </v-hover>
 
           </v-slide-item>
         </v-slide-group>

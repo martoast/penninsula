@@ -17,7 +17,7 @@
         <v-card color="rgb(0, 0, 0, 0.2)">
           <v-row>
             <v-row justify="center">
-              <h1 class="display-1 font-weight-thin mb-4">Contact Us</h1>
+              <h1 class="display-1 font-weight-thin mb-4 white--text">Contact Us</h1>
 
             </v-row>
             <v-col cols="12">
