@@ -24,7 +24,7 @@
           </v-col>
           <v-col cols="12" md="5" offset-md="1">
             <h2 :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']" class="mb-4">
-              My name is Michael George.
+              My name is Alex Martos.
               <br />I want to design your next infrastructure.
             </h2>
 
@@ -46,6 +46,7 @@
 <script>
 export default {
   data: () => ({
+    hover: null,
     src: require("@/assets/2.jpg"),
     highlights: [
       "Architecture development",

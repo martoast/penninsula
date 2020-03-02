@@ -1,29 +1,11 @@
 <template>
   <div>
     <section class="white">
-      <SectionHeader header="Welcome" sub-header="What's New" />
-      <v-container>
+      <v-container class="hidden-md-and-down">
         <v-row>
           <v-col cols="12" md="5" offset-md="1">
-            <v-card>
-              <v-img
-                :src="this.src"
-                class="white--text align-end"
-                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
-              >
-                <v-expand-transition>
-                  <div
-                    v-if="hover"
-                    class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
-                    style="height: 100%;"
-                  ></div>
-                </v-expand-transition>
-              </v-img>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6">
             <h2 :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']" class="mb-4">
-              My name is Michael George.
+              My name is Alex Martos.
               <br />I want to design your next infrastructure.
             </h2>
 
@@ -36,6 +18,17 @@
 
             <v-btn outlined color="primary" class="px-5" large>Learn More</v-btn>
           </v-col>
+          <v-col cols="12" md="6">
+            <v-card>
+              <v-img
+                :src="this.src"
+                class="white--text align-end"
+                gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                max-height="450px"
+                min-height="300"
+              ></v-img>
+            </v-card>
+          </v-col>
         </v-row>
       </v-container>
     </section>
@@ -43,13 +36,9 @@
 </template>
 
 <script>
-import SectionHeader from "~/components/SectionHeader.vue";
 export default {
-  components: {
-    SectionHeader
-  },
   data: () => ({
-    src: require("@/assets/banner.jpg"),
+    src: require("@/assets/2.jpg"),
     highlights: [
       "Architecture development",
       "Cloud computing",
