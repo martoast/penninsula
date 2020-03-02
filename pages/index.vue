@@ -1,9 +1,11 @@
 <template>
   <div>
+    <!-- <section>
+      <Banner />
+    </section> -->
     <section>
       <div>
         <SlideGroup />
-
       </div>
     </section>
 
@@ -21,15 +23,61 @@
           ></iframe>
         </div>
       </v-container>
-
     </section>
     <section>
       <div>
         <Blog />
       </div>
-
     </section>
+    <section>
+      <SectionHeader header="contact" sub-header="Contact Us" />
+      <v-form
+        name="contactus"
+        action="/thanks"
+        method="post"
+        netlify
+        netlify-honeypot="bot-field"
+      >
+        <v-container fill-height>
+          <v-row>
+            <v-col cols="12">
+              <v-text-field
+                label="Your Name*"
+                for="name"
+                type="text"
+                name="name"
+                outlined
+                required
+              />
+            </v-col>
+            <v-col cols="12">
+              <v-text-field
+                label="Your Email*"
+                for="email"
+                type="email"
+                name="email"
+                required
+                outlined
+              />
+            </v-col>
 
+            <v-col cols="12">
+              <v-textarea
+                label="Your Message*"
+                for="message"
+                name="message"
+                required
+                outlined
+              />
+            </v-col>
+
+            <v-col text-center>
+              <v-btn type="submit" value="Send message">Send</v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-form>
+    </section>
   </div>
 </template>
 
@@ -40,6 +88,8 @@ import Services from "~/components/Services.vue";
 import Blog from "~/components/Blog.vue";
 import Footer from "~/components/Footer.vue";
 import SlideGroup from "~/components/SlideGroup.vue";
+import Banner from "~/components/Banner.vue";
+import SectionHeader from "~/components/SectionHeader.vue";
 
 export default {
   layout: "landing",
@@ -55,7 +105,7 @@ export default {
       }
     }
   },
-  components: { Services, Footer, SlideGroup, Blog },
+  components: { Services, Footer, SlideGroup, Blog, Banner, SectionHeader },
 
   data: () => ({
     name: null,

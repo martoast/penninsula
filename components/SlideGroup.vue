@@ -1,18 +1,14 @@
 <template>
   <div>
-
     <div>
       <v-sheet
         class="mx-auto"
         max-width="800"
         elevation="8"
-        height="50%"
         color="blue-grey lighten-5"
       >
-        <v-slide-group
-          show-arrows
-          light
-        >
+        <AutoComplete />
+        <v-slide-group show-arrows light>
           <v-slide-item
             v-for="n in stores"
             :key="n"
@@ -26,26 +22,21 @@
                 :elevation="hover ? 12 : 2"
                 :class="{ 'on-hover': hover }"
               >
-                <v-img
-                  :src="n"
-                  :input-value="active"
-                  @click="toggle"
-                >
-
-                </v-img>
-
+                <v-img :src="n" :input-value="active" @click="toggle"> </v-img>
               </v-card>
             </v-hover>
-
           </v-slide-item>
         </v-slide-group>
       </v-sheet>
     </div>
   </div>
-
 </template>
 <script>
+import AutoComplete from "~/components/AutoComplete.vue";
 export default {
+  components: {
+    AutoComplete
+  },
   data: () => ({
     model: null,
     stores: [

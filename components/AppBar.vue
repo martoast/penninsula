@@ -1,7 +1,14 @@
 <template>
-  <v-app-bar :clipped-left="clipped" color="blue-grey" fixed app>
+  <v-app-bar
+    :clipped-left="clipped"
+    color="blue-grey"
+    fixed
+    app
+    height="70px"
+    dark=""
+  >
     <VuetifyLogo />
-    <v-toolbar-title>Peninsula Version 0.7</v-toolbar-title>
+    <v-toolbar-title>Peninsula Plaza Version 0.7</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="hidden-sm-and-down">
       <v-btn v-for="item in menu" :key="item.icon" :to="item.link" text>{{

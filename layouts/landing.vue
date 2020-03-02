@@ -2,22 +2,21 @@
   <v-app>
     <AppBar />
 
-    <div>
-      <!-- <Jumbrotron /> -->
-      <v-img
-        src="https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/FashionValley_Hero_Mobile_m4_20191205151447.jpg?yocs=D_H_"
-        height="800"
-        gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-      >
-        <v-row align="center" justify="center">
-          <div>
-            <v-container pt-12>
-              <netlify />
-            </v-container>
-          </div>
-        </v-row>
-      </v-img>
-    </div>
+    <!-- <Jumbrotron /> -->
+    <v-img
+      :src="require('@/assets/TRERRAZA.jpg')"
+      height="800"
+      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+    >
+      <v-row align="center" justify="center">
+        <div>
+          <v-container pt-12>
+            <netlify />
+          </v-container>
+        </div>
+      </v-row>
+    </v-img>
+
     <div>
       <Banner />
     </div>

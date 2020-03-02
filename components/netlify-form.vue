@@ -7,21 +7,11 @@
       netlify
       netlify-honeypot="bot-field"
     >
-      <input
-        type="hidden"
-        name="form-name"
-        value="contactus"
-      />
+      <input type="hidden" name="form-name" value="contactus" />
       <v-container fill-height>
-
         <v-card color="rgb(0, 0, 0, 0.2)">
           <v-row>
-            <v-row justify="center">
-              <h1 class="display-1 font-weight-thin mb-4 white--text">Contact Us</h1>
-
-            </v-row>
             <v-col cols="12">
-
               <div>
                 <v-text-field
                   label="Your Name*"
@@ -33,10 +23,8 @@
                   color="white"
                 />
               </div>
-
             </v-col>
             <v-col cols="12">
-
               <div>
                 <v-text-field
                   label="Your Email*"
@@ -47,13 +35,10 @@
                   outlined
                   color="white"
                 />
-
               </div>
-
             </v-col>
 
             <v-col cols="12">
-
               <div>
                 <v-textarea
                   label="Your Message*"
@@ -63,33 +48,23 @@
                   outlined
                   color="white"
                 />
-
               </div>
-
             </v-col>
             <div>
               <v-container>
-
                 <v-col text-center>
-                  <v-btn
-                    type="submit"
-                    value="Send message"
-                    color="success"
-                  >Send</v-btn>
+                  <v-btn type="submit" value="Send message" color="success"
+                    >Send</v-btn
+                  >
                 </v-col>
-
               </v-container>
-
             </div>
-
           </v-row>
         </v-card>
       </v-container>
     </form>
   </v-container>
-
 </template>
-
 
 <script>
 export default {

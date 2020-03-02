@@ -1,23 +1,13 @@
 <template>
   <div>
     <v-container pt-12>
+      <SectionHeader header="Exclusives" sub-header="What's New" />
       <v-card class="mx-auto">
-
-        <v-container
-          fluid
-          pt-6
-        >
+        <v-container fluid pt-6>
           <v-row dense>
-            <v-col
-              v-for="card in cards"
-              :key="card.title"
-              :cols="card.flex"
-            >
+            <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
               <v-hover v-slot:default="{ hover }">
-                <v-card
-                  :elevation="hover ? 16 : 2"
-                  :to="card.link"
-                >
+                <v-card :elevation="hover ? 16 : 2" :to="card.link">
                   <v-img
                     :src="card.src"
                     class="white--text align-end"
@@ -30,28 +20,25 @@
                         v-if="hover"
                         class="d-flex transition-fast-in-fast-out white darken-2 v-card--reveal display-3 white--text"
                         style="height: 100%;"
-                      >
-
-                      </div>
+                      ></div>
                     </v-expand-transition>
                     <v-card-title v-text="card.title"></v-card-title>
                   </v-img>
-
                 </v-card>
               </v-hover>
-
             </v-col>
           </v-row>
         </v-container>
       </v-card>
-
     </v-container>
-
   </div>
-
 </template>
 <script>
+import SectionHeader from "~/components/SectionHeader.vue";
 export default {
+  components: {
+    SectionHeader
+  },
   data: () => ({
     cards: [
       {
