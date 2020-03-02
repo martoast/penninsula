@@ -1,8 +1,11 @@
 <template>
   <div>
-    <!-- <section>
-      <Banner />
-    </section> -->
+    <section>
+      <About />
+    </section>
+    <section>
+      <About2 />
+    </section>
     <section>
       <div>
         <SlideGroup />
@@ -29,66 +32,6 @@
         <Blog2 />
       </div>
     </section>
-    <section>
-      <div>
-        <Blog />
-      </div>
-    </section>
-
-    <!-- <section>
-      <div>
-        <SlideGroup2 />
-      </div>
-    </section> -->
-    <!-- <section>
-      <SectionHeader header="contact" sub-header="Contact Us" />
-      <v-form
-        name="contactus"
-        action="/thanks"
-        method="post"
-        netlify
-        netlify-honeypot="bot-field"
-      >
-        <v-container fill-height>
-          <v-row>
-            <v-col cols="12">
-              <v-text-field
-                label="Your Name*"
-                for="name"
-                type="text"
-                name="name"
-                outlined
-                required
-              />
-            </v-col>
-            <v-col cols="12">
-              <v-text-field
-                label="Your Email*"
-                for="email"
-                type="email"
-                name="email"
-                required
-                outlined
-              />
-            </v-col>
-
-            <v-col cols="12">
-              <v-textarea
-                label="Your Message*"
-                for="message"
-                name="message"
-                required
-                outlined
-              />
-            </v-col>
-
-            <v-col text-center>
-              <v-btn type="submit" value="Send message">Send</v-btn>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-form>
-    </section> -->
   </div>
 </template>
 
@@ -103,6 +46,8 @@ import SlideGroup from "~/components/SlideGroup.vue";
 import Banner from "~/components/Banner.vue";
 import SectionHeader from "~/components/SectionHeader.vue";
 import SlideGroup2 from "~/components/SlideGroup2.vue";
+import About from "~/components/About.vue";
+import About2 from "~/components/About2.vue";
 
 export default {
   layout: "landing",
@@ -126,7 +71,9 @@ export default {
     Blog2,
     Banner,
     SectionHeader,
-    SlideGroup2
+    SlideGroup2,
+    About,
+    About2
   },
 
   data: () => ({

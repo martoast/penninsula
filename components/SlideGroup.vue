@@ -1,19 +1,11 @@
 <template>
   <div>
     <div>
-      <v-sheet
-        class="mx-auto"
-        max-width="800"
-        elevation="8"
-        color="blue-grey lighten-5"
-      >
+      <SectionHeader header="Exclusives" sub-header="Amazing Store Selection" />
+      <v-sheet class="mx-auto" max-width="800" elevation="8" color="blue-grey lighten-5">
         <AutoComplete />
         <v-slide-group show-arrows light>
-          <v-slide-item
-            v-for="n in stores"
-            :key="n"
-            v-slot:default="{ active, toggle }"
-          >
+          <v-slide-item v-for="n in stores" :key="n" v-slot:default="{ active, toggle }">
             <v-hover v-slot:default="{ hover }">
               <v-card
                 color="blue-grey lighten-5"
@@ -22,7 +14,7 @@
                 :elevation="hover ? 12 : 2"
                 :class="{ 'on-hover': hover }"
               >
-                <v-img :src="n" :input-value="active" @click="toggle"> </v-img>
+                <v-img :src="n" :input-value="active" @click="toggle"></v-img>
               </v-card>
             </v-hover>
           </v-slide-item>
@@ -33,9 +25,11 @@
 </template>
 <script>
 import AutoComplete from "~/components/AutoComplete.vue";
+import SectionHeader from "~/components/SectionHeader.vue";
 export default {
   components: {
-    AutoComplete
+    AutoComplete,
+    SectionHeader
   },
   data: () => ({
     model: null,

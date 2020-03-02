@@ -4,7 +4,7 @@
 
     <v-img
       :src="require('@/assets/TRERRAZA.jpg')"
-      height="800"
+      height="100vh"
       gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
     >
       <v-row align="center" justify="center">
@@ -15,11 +15,10 @@
         </div>
       </v-row>
     </v-img>
-    <Jumbrotron />
 
-    <div class="hidden-sm-and-down">
+    <!-- <div class="hidden-sm-and-down">
       <Banner />
-    </div>
+    </div>-->
 
     <v-content>
       <v-container>
