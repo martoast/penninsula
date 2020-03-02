@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1>I am a blog post {id}</h1>
+    <h1>I am a blog post</h1>
   </div>
 </template>
 <script>
 export default {
-  data: () => ({ id: this.$route.params.id })
+  data: () => ({})
 };
 </script>

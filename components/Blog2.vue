@@ -5,7 +5,7 @@
       <v-card class="mx-auto">
         <v-container fluid pt-6>
           <v-row dense>
-            <v-col v-for="card in cards" :key="card.title" :cols="card.flex">
+            <v-col v-for="card in cards" :key="card.src" :cols="card.flex">
               <v-hover v-slot:default="{ hover }">
                 <v-card :elevation="hover ? 16 : 2" :to="card.link">
                   <v-img
@@ -22,10 +22,10 @@
                         style="height: 100%;"
                       ></div>
                     </v-expand-transition>
-                    <v-card-title
+                    <!-- <v-card-title
                       v-text="card.title"
                       class="hidden-sm-and-down"
-                    ></v-card-title>
+                    ></v-card-title> -->
                   </v-img>
                 </v-card>
               </v-hover>
@@ -45,24 +45,23 @@ export default {
   data: () => ({
     cards: [
       {
-        title: "Best dining in town",
+        title: "Innovative Spaces",
         link: "blog/bestdining",
-        src:
-          "https://restaurantden.com/wp-content/uploads/2017/09/iso-republic.jpg",
+        src: require("@/assets/COMINGSOON.jpg"),
         flex: 12
       },
+
       {
-        title: "New Styles",
-        link: "blog/newstyles",
-        src:
-          "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/LUXE_Spot-2_d4_20191029120312.jpg?yocs=D_H_",
+        title: "Best dining in town",
+        link: "blog/bestdining",
+        src: require("@/assets/WEB.jpg"),
         flex: 6
       },
+
       {
-        title: "Exclusives",
-        link: "blog/exclusives",
-        src:
-          "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/NEW-NEXT-Spot-1_Mobile_m4_20191202142201.jpg?yocs=D_H_",
+        title: "Best dining in town",
+        link: "blog/bestdining",
+        src: require("@/assets/TRERRAZA.jpg"),
         flex: 6
       }
     ]

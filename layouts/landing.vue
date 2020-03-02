@@ -2,7 +2,6 @@
   <v-app>
     <AppBar />
 
-    <!-- <Jumbrotron /> -->
     <v-img
       :src="require('@/assets/TRERRAZA.jpg')"
       height="800"
@@ -16,8 +15,9 @@
         </div>
       </v-row>
     </v-img>
+    <Jumbrotron />
 
-    <div>
+    <div class="hidden-sm-and-down">
       <Banner />
     </div>
 
@@ -28,33 +28,6 @@
     </v-content>
 
     <Footer />
-    <div class="hidden-md-and-up">
-      <v-container>
-        <v-navigation-drawer
-          v-model="rightDrawer"
-          :right="right"
-          temporary
-          fixed
-          dark
-        >
-          <v-list>
-            <v-list-item
-              v-for="item in items"
-              :key="item.title"
-              :to="item.link"
-            >
-              <v-list-item-icon>
-                <v-icon>{{ item.icon }}</v-icon>
-              </v-list-item-icon>
-
-              <v-list-item-content>
-                <v-list-item-title>{{ item.title }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-        </v-navigation-drawer>
-      </v-container>
-    </div>
   </v-app>
 </template>
 

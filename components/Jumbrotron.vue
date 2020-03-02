@@ -1,11 +1,5 @@
 <template>
-  <img class="Ficha" alt="Vuetify Logo" src="~/assets/TRENDING.jpg" />
+  <v-parallax :src="require('@/assets/2.jpg')" height="300"></v-parallax>
 </template>
 
-<style>
-.Ficha {
-  width: 100%;
-
-  max-height: 30%;
-}
-</style>
+<style></style>

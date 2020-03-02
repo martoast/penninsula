@@ -1,29 +1,58 @@
 <template>
-  <v-app-bar
-    :clipped-left="clipped"
-    color="blue-grey"
-    fixed
-    app
-    height="70px"
-    dark=""
-  >
-    <VuetifyLogo />
-    <v-toolbar-title>Peninsula Plaza Version 0.7</v-toolbar-title>
-    <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn v-for="item in menu" :key="item.icon" :to="item.link" text>{{
-        item.title
-      }}</v-btn>
-    </v-toolbar-items>
-
-    <v-btn
-      icon
-      @click.stop="rightDrawer = !rightDrawer"
-      class="hidden-md-and-up"
+  <div>
+    <v-app-bar
+      :clipped-left="clipped"
+      color="blue-grey"
+      fixed
+      app
+      height="70px"
+      dark=""
     >
-      <v-icon>mdi-menu</v-icon>
-    </v-btn>
-  </v-app-bar>
+      <VuetifyLogo />
+      <v-toolbar-title>Peninsula Plaza Version 0.7</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn v-for="item in menu" :key="item.icon" :to="item.link" text>{{
+          item.title
+        }}</v-btn>
+      </v-toolbar-items>
+
+      <v-btn
+        icon
+        @click.stop="rightDrawer = !rightDrawer"
+        class="hidden-md-and-up"
+      >
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <div class="hidden-md-and-up">
+      <v-container>
+        <v-navigation-drawer
+          v-model="rightDrawer"
+          :right="right"
+          temporary
+          fixed
+          dark
+        >
+          <v-list>
+            <v-list-item
+              v-for="item in items"
+              :key="item.title"
+              :to="item.link"
+            >
+              <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+        </v-navigation-drawer>
+      </v-container>
+    </div>
+  </div>
 </template>
 
 <script>

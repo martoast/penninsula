@@ -26,10 +26,21 @@
     </section>
     <section>
       <div>
-        <Blog />
+        <Blog2 />
       </div>
     </section>
     <section>
+      <div>
+        <Blog />
+      </div>
+    </section>
+
+    <!-- <section>
+      <div>
+        <SlideGroup2 />
+      </div>
+    </section> -->
+    <!-- <section>
       <SectionHeader header="contact" sub-header="Contact Us" />
       <v-form
         name="contactus"
@@ -77,7 +88,7 @@
           </v-row>
         </v-container>
       </v-form>
-    </section>
+    </section> -->
   </div>
 </template>
 
@@ -86,10 +97,12 @@ import { validationMixin } from "vuelidate";
 import { required, maxLength, email } from "vuelidate/lib/validators";
 import Services from "~/components/Services.vue";
 import Blog from "~/components/Blog.vue";
+import Blog2 from "~/components/Blog2.vue";
 import Footer from "~/components/Footer.vue";
 import SlideGroup from "~/components/SlideGroup.vue";
 import Banner from "~/components/Banner.vue";
 import SectionHeader from "~/components/SectionHeader.vue";
+import SlideGroup2 from "~/components/SlideGroup2.vue";
 
 export default {
   layout: "landing",
@@ -105,7 +118,16 @@ export default {
       }
     }
   },
-  components: { Services, Footer, SlideGroup, Blog, Banner, SectionHeader },
+  components: {
+    Services,
+    Footer,
+    SlideGroup,
+    Blog,
+    Blog2,
+    Banner,
+    SectionHeader,
+    SlideGroup2
+  },
 
   data: () => ({
     name: null,
