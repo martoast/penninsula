@@ -14,7 +14,10 @@
               :cols="card.flex"
             >
               <v-hover v-slot:default="{ hover }">
-                <v-card :elevation="hover ? 16 : 2">
+                <v-card
+                  :elevation="hover ? 16 : 2"
+                  :to="card.link"
+                >
                   <v-img
                     :src="card.src"
                     class="white--text align-end"
@@ -53,18 +56,21 @@ export default {
     cards: [
       {
         title: "Best dining in town",
+        link: "blog/bestdining",
         src:
-          "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/Spot-4_Mobile_m4_20191104111144.jpg?yocs=D_H_",
+          "https://restaurantden.com/wp-content/uploads/2017/09/iso-republic.jpg",
         flex: 12
       },
       {
         title: "New Styles",
+        link: "blog/newstyles",
         src:
           "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/LUXE_Spot-2_d4_20191029120312.jpg?yocs=D_H_",
         flex: 6
       },
       {
         title: "Exclusives",
+        link: "blog/exclusives",
         src:
           "https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/NEW-NEXT-Spot-1_Mobile_m4_20191202142201.jpg?yocs=D_H_",
         flex: 6

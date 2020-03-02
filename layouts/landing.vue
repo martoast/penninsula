@@ -1,53 +1,24 @@
 <template>
   <v-app>
-    <v-app-bar
-      :clipped-left="clipped"
-      color="blue-grey"
-      fixed
-      app
-    >
-      <v-toolbar-title>Peninsula Version 0.7</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn
-          v-for="item in menu"
-          :key="item.icon"
-          :to="item.link"
-          text
-        >{{ item.title }}</v-btn>
-      </v-toolbar-items>
-
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-        class="hidden-md-and-up"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
-    </v-app-bar>
+    <AppBar />
 
     <div>
-
       <v-img
         src="https://cdn-us-ec.yottaa.net/555a305b2bb0ac71b9002d22/8da650303f06013513b1026173a6dedd.yottaa.net/v~4b.1a3.0.0/htmlcontent/FashionValley_Hero_Mobile_m4_20191205151447.jpg?yocs=D_H_"
         height="800"
+        gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       >
-        <v-row
-          align="center"
-          justify="center"
-        >
-
+        <v-row align="center" justify="center">
           <div>
             <v-container pt-12>
               <netlify />
-
             </v-container>
           </div>
-
         </v-row>
-
       </v-img>
-
+    </div>
+    <div>
+      <Banner />
     </div>
 
     <v-content>
@@ -59,7 +30,6 @@
     <Footer />
     <div class="hidden-md-and-up">
       <v-container>
-
         <v-navigation-drawer
           v-model="rightDrawer"
           :right="right"
@@ -85,15 +55,16 @@
         </v-navigation-drawer>
       </v-container>
     </div>
-
   </v-app>
 </template>
 
 <script>
 import Footer from "~/components/Footer.vue";
 import netlify from "~/components/netlify-form.vue";
+import AppBar from "~/components/AppBar.vue";
+import Banner from "~/components/Banner.vue";
 export default {
-  components: { Footer, netlify },
+  components: { Footer, netlify, AppBar, Banner },
 
   data() {
     return {
