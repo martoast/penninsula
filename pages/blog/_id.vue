@@ -5,6 +5,8 @@
 </template>
 <script>
 export default {
-  data: () => ({})
+  data: () => ({
+    id: this.$route.params.id
+  })
 };
 </script>
