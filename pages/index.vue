@@ -3,14 +3,8 @@
     <section>
       <About />
     </section>
-    <section>
-      <About2 />
-    </section>
-    <section>
-      <div>
-        <SlideGroup />
-      </div>
-    </section>
+    
+    
 
     <section>
       <v-container pt-9>
@@ -26,11 +20,6 @@
           ></iframe>
         </div>
       </v-container>
-    </section>
-    <section>
-      <div>
-        <Blog2 />
-      </div>
     </section>
   </div>
 </template>

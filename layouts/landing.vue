@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <AppBar />
+
 
     <v-img
       :src="require('@/assets/TRERRAZA.jpg')"
@@ -16,9 +16,12 @@
       </v-row>
     </v-img>
 
-    <!-- <div class="hidden-sm-and-down">
-      <Banner />
-    </div>-->
+    <div align="center" class="pt-12">
+
+      <v-sheet>
+      <iframe width="90%" height="720" src="https://www.youtube.com/embed/8MKyyGD9sys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </v-sheet>
+    </div>
 
     <v-content>
       <v-container>

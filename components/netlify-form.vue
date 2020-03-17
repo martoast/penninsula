@@ -1,60 +1,6 @@
 <template>
   <v-container pt-12 fill-height>
-    <form name="contactus" action="/thanks" method="post" netlify netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contactus" />
-      <v-container fill-height>
-        <v-card color="rgb(245,245,245, 0.4)">
-          <v-row>
-            <v-col cols="12">
-              <div>
-                <v-text-field
-                  label="Your Name*"
-                  for="name"
-                  type="text"
-                  name="name"
-                  outlined
-                  required
-                  color="white"
-                />
-              </div>
-            </v-col>
-            <v-col cols="12">
-              <div>
-                <v-text-field
-                  label="Your Email*"
-                  for="email"
-                  type="email"
-                  name="email"
-                  required
-                  outlined
-                  color="white"
-                />
-              </div>
-            </v-col>
-
-            <v-col cols="12">
-              <div>
-                <v-textarea
-                  label="Your Message*"
-                  for="message"
-                  name="message"
-                  required
-                  outlined
-                  color="white"
-                />
-              </div>
-            </v-col>
-            <div>
-              <v-container>
-                <v-col text-center>
-                  <v-btn type="submit" value="Send message" color="success">Send</v-btn>
-                </v-col>
-              </v-container>
-            </div>
-          </v-row>
-        </v-card>
-      </v-container>
-    </form>
+    <div class="typeform-widget" data-url="https://manny957600.typeform.com/to/Osakva" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=Osakva&utm_source=typeform.com-01E3KE6N328852226FYJA6JATR-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
   </v-container>
 </template>
 
