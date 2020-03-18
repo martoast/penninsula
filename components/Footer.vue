@@ -1,34 +1,36 @@
 <template>
-  <v-footer
-    dark
-    height="auto"
-    padless
-  >
-    <v-col
-      class="text-center blue-grey darken-4 pa-3"
-      cols="12"
-    >&copy; 2020 Peninsula — All Rights reserved.</v-col>
+  <v-footer dark padless width="100%">
+    <v-card flat tile class="white--text text-center" color="#404b87" width="100%">
+      <v-card-text>
+        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
+          <v-icon size="24px">{{ icon }}</v-icon>
+        </v-btn>
+      </v-card-text>
 
+      <v-divider></v-divider>
+
+      <v-card-text class="white--text">
+        {{ new Date().getFullYear() }} —
+        <strong>Vuetify</strong>
+      </v-card-text>
+    </v-card>
   </v-footer>
 </template>
 
 <script>
 export default {
   data: () => ({
-    categories: [
-      "Exclusives",
-      "Whats'new",
-      "Testimonials",
-      "Press Room",
-      "Partners",
-      "New in Tijuana",
-      "Macarthy Equipment",
-      "Elite Construction Management"
-    ],
-    company: ["Services", "Projects", "Our Team", "Commitment to the Community"]
+    icons: [
+      "mdi-facebook",
+      "mdi-twitter",
+      "mdi-google-plus",
+      "mdi-linkedin",
+      "mdi-instagram"
+    ]
   })
 };
 </script>
+
 
 <style lang="sass">
 .v-application .v-footer

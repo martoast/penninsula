@@ -3,43 +3,17 @@
     <section class="white">
       <v-container>
         <v-row>
-          <v-col
-            cols="12"
-            md="6"
-          >
+          <v-col cols="12" md="6">
             <Cards />
           </v-col>
 
-          <v-col
-            cols="12"
-            md="4"
-            offset-md="1"
-          >
-            <div class="pt-6">
-              <div class="hidden-md-and-down">
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-
+          <v-col cols="12" md="4" offset-md="1">
+            <div>
+              <div>
+                <ManiForm />
               </div>
-
-              <h2
-                :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
-                class="mb-8"
-              >
-                Un Destino de
-                Experiencias
-                <br />
-              </h2>
-
-              <p class="subtitle-1">Península propone innovar el concepto de entretenimiento utilizando las tradiciones culinarias de la Baja junto cono el auge cultural y artístico que tanto caracteriza el estado.</p>
-
             </div>
-
           </v-col>
-
         </v-row>
       </v-container>
     </section>
@@ -49,8 +23,9 @@
 <script>
 import Cards from "~/components/Cards.vue";
 import netlify from "~/components/netlify-form.vue";
+import ManiForm from "~/components/ManiForm.vue";
 export default {
-  components: { Cards, netlify },
+  components: { Cards, netlify, ManiForm },
   data: () => ({
     hover: null,
     src: require("@/assets/COMINGSOON.jpg"),

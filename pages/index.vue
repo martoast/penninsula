@@ -1,9 +1,24 @@
 <template>
   <div>
+    <v-sheet height="350px">
+      <div class="pt-10">
+        <v-row justify="center">
+          <v-col cols="12" md="8">
+            <div class="pt-6">
+              <SectionHeader
+                header="Welcome"
+                subHeader="Un Destino de 
+              Experiencias"
+                text="Península propone innovar el concepto de entretenimiento utilizando las tradiciones culinarias de la Baja junto cono el auge cultural y artístico que tanto caracteriza el estado."
+              />
+            </div>
+          </v-col>
+        </v-row>
+      </div>
+    </v-sheet>
     <section>
       <v-container pt-9>
         <div>
-
           <iframe
             allowfullscreen="true"
             title="panorama"
@@ -19,7 +34,6 @@
     <section>
       <About2 />
     </section>
-
   </div>
 </template>
 
