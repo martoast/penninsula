@@ -1,12 +1,9 @@
 <template>
   <div>
     <section>
-      <About />
-    </section>
-
-    <section>
       <v-container pt-9>
         <div>
+
           <iframe
             allowfullscreen="true"
             title="panorama"
@@ -19,6 +16,10 @@
         </div>
       </v-container>
     </section>
+    <section>
+      <About2 />
+    </section>
+
   </div>
 </template>
 

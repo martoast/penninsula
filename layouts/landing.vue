@@ -5,7 +5,10 @@
       height="100vh"
       gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
     >
-      <v-row align="center" justify="center">
+      <v-row
+        align="center"
+        justify="center"
+      >
         <div>
           <v-container pt-12>
             <netlify />
@@ -14,17 +17,27 @@
       </v-row>
     </v-img>
 
-    <div align="center" class="pt-12">
-      <v-sheet>
-        <iframe
-          width="90%"
-          height="720"
-          src="https://www.youtube.com/embed/8MKyyGD9sys"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </v-sheet>
+    <div align="center">
+      <v-img
+        :src="require('@/assets/2.jpg')"
+        height="100vh"
+        gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+      >
+        <div
+          align="center"
+          class="pt-12"
+        ><iframe
+            width="90%"
+            height="700"
+            src="https://www.youtube.com/embed/XHOmBV4js_E"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+      </v-img>
+
     </div>
 
     <v-content>
@@ -32,11 +45,6 @@
         <nuxt />
       </v-container>
     </v-content>
-    <v-img
-      :src="require('@/assets/2.jpg')"
-      height="100vh"
-      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
-    ></v-img>
 
     <Footer />
   </v-app>
@@ -48,8 +56,9 @@ import netlify from "~/components/netlify-form.vue";
 import AppBar from "~/components/AppBar.vue";
 import Banner from "~/components/Banner.vue";
 import Jumbrotron from "~/components/Jumbrotron.vue";
+import About2 from "~/components/About2.vue";
 export default {
-  components: { Footer, netlify, AppBar, Banner, Jumbrotron },
+  components: { Footer, netlify, AppBar, Banner, Jumbrotron, About2 },
 
   data() {
     return {
