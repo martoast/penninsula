@@ -11,7 +11,7 @@
 
       <v-card-text class="white--text">
         {{ new Date().getFullYear() }} —
-        <strong>Vuetify</strong>
+        <strong>Peninsula</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -20,13 +20,7 @@
 <script>
 export default {
   data: () => ({
-    icons: [
-      "mdi-facebook",
-      "mdi-twitter",
-      "mdi-google-plus",
-      "mdi-linkedin",
-      "mdi-instagram"
-    ]
+    icons: ["mdi-facebook", "mdi-instagram"]
   })
 };
 </script>

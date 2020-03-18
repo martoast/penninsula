@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-dialog v-model="dialog" width="660">
       <template v-slot:activator="{ on }">
-        <v-btn color="#404b87" dark v-on="on">Click Me</v-btn>
+        <v-btn color="#404b87" dark v-on="on">Reproducir</v-btn>
       </template>
 
       <div>
