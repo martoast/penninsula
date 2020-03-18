@@ -1,5 +1,5 @@
 <template>
-  <v-container pt-12 fill-height>
+  <v-container fill-height>
     <div
       class="typeform-widget"
       data-url="https://manny957600.typeform.com/to/Osakva"
@@ -29,16 +29,18 @@
     }
   })();
     </script>
-    <div
-      style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"
-    >
-      powered by
-      <a
-        href="https://admin.typeform.com/signup?utm_campaign=Osakva&utm_source=typeform.com-01E3KE6N328852226FYJA6JATR-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES"
-        style="color: #999"
-        target="_blank"
-      >Typeform</a>
-    </div>
+    <v-row justify="center" class="pl-6">
+      <div
+        style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"
+      >
+        powered by
+        <a
+          href="https://admin.typeform.com/signup?utm_campaign=Osakva&utm_source=typeform.com-01E3KE6N328852226FYJA6JATR-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES"
+          style="color: #999"
+          target="_blank"
+        >Typeform</a>
+      </div>
+    </v-row>
   </v-container>
 </template>
 
