@@ -1,9 +1,7 @@
 <template>
   <v-app>
-
-
     <v-img
-      :src="require('@/assets/TRERRAZA.jpg')"
+      :src="require('@/assets/arialrender.png')"
       height="100vh"
       gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
     >
@@ -17,9 +15,15 @@
     </v-img>
 
     <div align="center" class="pt-12">
-
       <v-sheet>
-      <iframe width="90%" height="720" src="https://www.youtube.com/embed/8MKyyGD9sys" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe
+          width="90%"
+          height="720"
+          src="https://www.youtube.com/embed/8MKyyGD9sys"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </v-sheet>
     </div>
 
@@ -28,6 +32,11 @@
         <nuxt />
       </v-container>
     </v-content>
+    <v-img
+      :src="require('@/assets/2.jpg')"
+      height="100vh"
+      gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
+    ></v-img>
 
     <Footer />
   </v-app>

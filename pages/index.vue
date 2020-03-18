@@ -3,8 +3,6 @@
     <section>
       <About />
     </section>
-    
-    
 
     <section>
       <v-container pt-9>

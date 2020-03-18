@@ -47,7 +47,7 @@
 export default {
   data: () => ({
     hover: null,
-    src: require("@/assets/2.jpg"),
+    src: require("@/assets/TRERRAZA.jpg"),
     highlights: [
       "Architecture development",
       "Cloud computing",

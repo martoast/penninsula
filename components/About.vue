@@ -15,7 +15,6 @@
             <p
               class="mb-5"
             >Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum. Donec mollis hendrerit risus. Donec vitae sapien ut libero venenatis faucibus. In hac habitasse platea dictumst. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-
           </v-col>
           <v-col cols="12" md="6">
             <v-card>
@@ -37,7 +36,7 @@
 <script>
 export default {
   data: () => ({
-    src: require("@/assets/2.jpg"),
+    src: require("@/assets/COMINGSOON.jpg"),
     highlights: [
       "Architecture development",
       "Cloud computing",
