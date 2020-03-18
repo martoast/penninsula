@@ -16,15 +16,25 @@
             offset-md="1"
           >
             <div class="pt-6">
+              <div class="hidden-md-and-down">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+              </div>
+
               <h2
                 :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
                 class="mb-8"
               >
-                My name is Alex Martos.
-                <br />I want to design your next infrastructure.
+                Un Destino de
+                Experiencias
+                <br />
               </h2>
 
-              <p class="subtitle-1">Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec vitae orci sed dolor rutrum auctor. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum ullamcorper mauris at ligula.</p>
+              <p class="subtitle-1">Península propone innovar el concepto de entretenimiento utilizando las tradiciones culinarias de la Baja junto cono el auge cultural y artístico que tanto caracteriza el estado.</p>
 
             </div>
 
@@ -38,8 +48,9 @@
 
 <script>
 import Cards from "~/components/Cards.vue";
+import netlify from "~/components/netlify-form.vue";
 export default {
-  components: { Cards },
+  components: { Cards, netlify },
   data: () => ({
     hover: null,
     src: require("@/assets/COMINGSOON.jpg"),

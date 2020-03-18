@@ -11,6 +11,16 @@
       >
         <div>
           <v-container pt-12>
+            <v-row justify="center">
+              <v-img
+                :src="require('@/assets/penlogo.png')"
+                max-height="100px"
+                max-width="100px"
+              >
+              </v-img>
+
+            </v-row>
+
             <netlify />
           </v-container>
         </div>
@@ -28,7 +38,7 @@
           class="pt-12"
         ><iframe
             width="90%"
-            height="700"
+            height="600"
             src="https://www.youtube.com/embed/XHOmBV4js_E"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
