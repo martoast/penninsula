@@ -3,11 +3,14 @@
     <v-sheet height="400px">
       <div>
         <v-row justify="center">
-          <v-col cols="12" md="8">
+          <v-col
+            cols="12"
+            md="8"
+          >
             <div>
               <SectionHeader
                 header="Welcome"
-                subHeader="Un Destino de 
+                subHeader="Un Destino de
               Experiencias"
                 text="Península propone innovar el concepto de entretenimiento utilizando las tradiciones culinarias de la Baja junto cono el auge cultural y artístico que tanto caracteriza el estado."
               />
@@ -31,7 +34,7 @@
         </div>
       </v-container>
     </section>
-    <section>
+    <section id="contact">
       <About2 />
     </section>
   </div>

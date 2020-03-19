@@ -8,19 +8,33 @@
   >
     <!-- <LogoCard /> -->
     <v-container fill-height>
-      <v-card class="mx-auto" max-width="800" outlined color="transparent" dark>
-        <v-row justify="center" align="center">
+      <v-card
+        class="mx-auto"
+        max-width="800"
+        outlined
+        color="transparent"
+        dark
+      >
+        <v-row
+          justify="center"
+          align="center"
+        >
           <h1
             class="mb-4"
             :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
           >Primer lifestyle mall de Tijuana</h1>
         </v-row>
 
-        <v-row justify="center" align="center">
-          <h4 class="title font-weight-light">
-            <strong>Todo lo que necesitas a 10 minutos de tu casa</strong>
-          </h4>
-        </v-row>
+        <div>
+          <v-row
+            justify="center"
+            align="center"
+          >
+            <h2 class="title font-weight-light">
+              <strong>Todo lo que necesitas a 10 minutos de tu casa</strong>
+            </h2>
+          </v-row>
+        </div>
 
         <v-row justify="center">
           <h3>
@@ -37,10 +51,11 @@
             large
             min-width="175"
             rounded
-          >Explore Our Services</v-btn>
+            @click="$vuetify.goTo('#contact')"
+          >Solicitar Info</v-btn>
         </v-row>
         <v-row justify="center">
-          <div>
+          <div class="pl-3">
             <VideoDialog />
           </div>
         </v-row>
