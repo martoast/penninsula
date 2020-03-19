@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-sheet height="415px">
-      <div class="pt-10 pb-10">
+    <v-sheet height="400px">
+      <div>
         <v-row justify="center">
           <v-col cols="12" md="8">
-            <div class="pt-6">
+            <div>
               <SectionHeader
                 header="Welcome"
                 subHeader="Un Destino de 
@@ -17,7 +17,7 @@
       </div>
     </v-sheet>
     <section>
-      <v-container pt-9>
+      <v-container>
         <div>
           <iframe
             allowfullscreen="true"

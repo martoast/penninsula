@@ -2,7 +2,15 @@
   <div class="text-center">
     <v-dialog v-model="dialog" width="660">
       <template v-slot:activator="{ on }">
-        <v-btn color="#404b87" dark v-on="on">Reproducir</v-btn>
+        <v-btn
+          class="mr-md-3 my-2"
+          color="white"
+          large
+          min-width="175"
+          outlined
+          rounded
+          v-on="on"
+        >Ver Video</v-btn>
       </template>
 
       <div>
