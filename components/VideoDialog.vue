@@ -1,9 +1,11 @@
 <template>
   <div class="text-center">
-    <v-dialog v-model="dialog" width="660">
+    <v-dialog
+      v-model="dialog"
+      width="660"
+    >
       <template v-slot:activator="{ on }">
         <v-btn
-          class="mr-md-3 my-2"
           color="white"
           large
           min-width="175"

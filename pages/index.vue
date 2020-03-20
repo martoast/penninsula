@@ -9,7 +9,7 @@
           >
             <div>
               <SectionHeader
-                header="Welcome"
+                header="bienvenido a"
                 subHeader="Un Destino de
               Experiencias"
                 text="Península propone innovar el concepto de entretenimiento utilizando las tradiciones culinarias de la Baja junto cono el auge cultural y artístico que tanto caracteriza el estado."

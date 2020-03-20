@@ -1,21 +1,31 @@
 <template>
   <div>
     <section class="white">
-      <v-container>
-        <v-row>
-          <v-col cols="12" md="6">
-            <Cards />
-          </v-col>
+      <v-sheet>
+        <v-container>
+          <v-row>
+            <v-col
+              cols="12"
+              md="6"
+            >
+              <Cards />
+            </v-col>
 
-          <v-col cols="12" md="4" offset-md="1">
-            <div>
+            <v-col
+              cols="12"
+              md="4"
+              offset-md="1"
+            >
               <div>
-                <ManiForm />
+                <div>
+                  <netlify />
+                </div>
               </div>
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-sheet>
+
     </section>
   </div>
 </template>

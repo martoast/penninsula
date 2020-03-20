@@ -1,8 +1,5 @@
 <template>
-  <v-container
-    pt-12
-    fill-height
-  >
+  <v-container fill-height>
 
     <form
       name="contactus"
@@ -17,31 +14,47 @@
         value="contactus"
       />
       <v-container fill-height>
-        <v-card color="rgb(245,245,245, 0.4)">
+        <v-card color="transparent">
+
+          <SectionHeader subHeader="Contacto" />
           <v-row>
             <v-col cols="12">
               <div>
                 <v-text-field
-                  label="Your Name*"
+                  label="Nombre*"
                   for="name"
                   type="text"
                   name="name"
                   outlined
                   required
-                  color="white"
+                  color="#404b87"
                 />
               </div>
             </v-col>
             <v-col cols="12">
               <div>
                 <v-text-field
-                  label="Your Email*"
+                  label="Email*"
                   for="email"
                   type="email"
                   name="email"
                   required
                   outlined
-                  color="white"
+                  color="#404b87"
+                />
+              </div>
+            </v-col>
+
+            <v-col cols="12">
+              <div>
+                <v-text-field
+                  label="Telefono*"
+                  for="phone"
+                  type="text"
+                  name="phone"
+                  required
+                  outlined
+                  color="#404b87"
                 />
               </div>
             </v-col>
@@ -49,12 +62,12 @@
             <v-col cols="12">
               <div>
                 <v-textarea
-                  label="Your Message*"
+                  label="Mensaje*"
                   for="message"
                   name="message"
                   required
                   outlined
-                  color="white"
+                  color="#404b87"
                 />
               </div>
             </v-col>
@@ -64,8 +77,9 @@
                   <v-btn
                     type="submit"
                     value="Send message"
-                    color="success"
-                  >Send</v-btn>
+                    color="#404b87"
+                    dark
+                  >Enviar</v-btn>
                 </v-col>
               </v-container>
             </div>
@@ -75,9 +89,10 @@
     </form>
   </v-container>
 </template>
-
 <script>
+import SectionHeader from "~/components/SectionHeader";
 export default {
+  components: { SectionHeader },
   data() {
     return {
       form: {

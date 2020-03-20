@@ -19,10 +19,7 @@
           justify="center"
           align="center"
         >
-          <h1
-            class="mb-4"
-            :class="$vuetify.breakpoint.mdAndUp ? 'display-2' : 'display-1'"
-          >Primer lifestyle mall de Tijuana</h1>
+          <h1 class="mb-4 display-2 text-center">Primer lifestyle mall de Tijuana</h1>
         </v-row>
 
         <div>
@@ -30,8 +27,9 @@
             justify="center"
             align="center"
           >
-            <h2 class="title font-weight-light">
-              <strong>Todo lo que necesitas a 10 minutos de tu casa</strong>
+
+            <h2 class="title font-weight-light text-center">
+              <strong>Todo lo que necesitas a 10 minutos de tu casa.</strong>
             </h2>
           </v-row>
         </div>
@@ -55,7 +53,7 @@
           >Solicitar Info</v-btn>
         </v-row>
         <v-row justify="center">
-          <div class="pl-3">
+          <div>
             <VideoDialog />
           </div>
         </v-row>
