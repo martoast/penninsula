@@ -3,7 +3,7 @@
     <section class="white">
       <v-container>
         <v-row>
-          <v-col cols="12" md="5">
+          <!-- <v-col cols="12" md="5">
             <h2
               :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
               class="mb-4"
@@ -12,8 +12,8 @@
             <p
               class="subtitle-1"
             >Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad.</p>
-          </v-col>
-          <v-col cols="12" md="6" offset-md="1">
+          </v-col>-->
+          <v-col cols="12" md="12">
             <Carrousel />
           </v-col>
         </v-row>
