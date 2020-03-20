@@ -4,7 +4,7 @@
     height="100vh"
     :src="require('@/assets/arialrender.png')"
     class="white--text"
-    gradient="to top, rgba(255,255,255, 0), rgba(25, 25, 38, .85)"
+    gradient="to top, rgba(64, 75, 135, 0.5), rgba(25, 25, 38, .85)"
   >
     <!-- <LogoCard /> -->
     <v-container fill-height>
