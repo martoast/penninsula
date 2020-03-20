@@ -8,15 +8,11 @@
               <v-container fluid pa-0>
                 <v-row>
                   <v-col cols="12" md="6" class="pa-0">
-                    <v-card-title>Contact Info</v-card-title>
+                    <v-card-title></v-card-title>
                     <v-card-text>
-                      <div>+1 (321) 383-4531</div>
-                      <div>
-                        <a href="#">contact@alphaconstruction.com</a>
-                      </div>
-                      <div>
-                        <a href="#">@alphaconstruction</a>
-                      </div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
                     </v-card-text>
                   </v-col>
 
