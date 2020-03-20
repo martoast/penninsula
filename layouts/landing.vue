@@ -1,6 +1,9 @@
 <template>
   <v-app>
-    <AppBar />
+    <div class="hidden-md-and-down">
+      <AppBar />
+    </div>
+
     <div>
       <Hero />
     </div>

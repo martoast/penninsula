@@ -50,7 +50,6 @@
                 <v-text-field
                   label="Telefono*"
                   for="phone"
-                  type="text"
                   name="phone"
                   required
                   outlined

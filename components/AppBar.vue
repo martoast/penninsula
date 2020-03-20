@@ -2,7 +2,7 @@
   <div>
     <v-app-bar
       app
-      height="100px"
+      height="75px"
       dark
       v-scroll="onScroll"
       :color="!isScrolling ? 'transparent' : '#404b87'"

@@ -1,17 +1,17 @@
 <template>
   <img
-    class="VuetifyLogo"
+    class="VuetifyLogoMobile"
     alt="Vuetify Logo"
     src="~/assets/PENINSULALOGOnegro.png"
   />
 </template>
 
 <style>
-.VuetifyLogo {
-  width: 101px;
-  height: 50px;
-  transform: rotateY(560deg);
-  animation: turn 3.5s ease-out forwards 1s;
+.VuetifyLogoMobile {
+  width: 200px;
+  height: 100px;
+
+  padding-bottom: 6px;
 }
 
 @keyframes turn {

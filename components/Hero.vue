@@ -15,6 +15,12 @@
         color="transparent"
         dark
       >
+        <div class="hidden-md-and-up">
+          <v-row justify="center">
+            <VuetifyLogoMobile />
+          </v-row>
+
+        </div>
         <v-row
           justify="center"
           align="center"
@@ -65,10 +71,12 @@
 <script>
 import VideoDialog from "~/components/VideoDialog.vue";
 import LogoCard from "~/components/LogoCard.vue";
+import VuetifyLogoMobile from "~/components/VuetifyLogoMobile.vue";
 export default {
   components: {
     VideoDialog,
-    LogoCard
+    LogoCard,
+    VuetifyLogoMobile
   },
   computed: {
     namespace() {
