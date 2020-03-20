@@ -1,14 +1,12 @@
 <template>
   <div>
     <v-app-bar
-      :clipped-left="clipped"
-      color="transparent"
       app
-      flat
-      hide-on-scroll
-      scroll-off-screen
       height="100px"
       dark
+      v-scroll="onScroll"
+      :color="!isScrolling ? 'transparent' : '#404b87'"
+      :flat="!isScrolling"
     >
       <VuetifyLogo />
 
