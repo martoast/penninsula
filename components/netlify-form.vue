@@ -1,21 +1,9 @@
 <template>
   <v-container fill-height>
-
-    <form
-      name="contactus"
-      action="/thanks"
-      method="post"
-      netlify
-      netlify-honeypot="bot-field"
-    >
-      <input
-        type="hidden"
-        name="form-name"
-        value="contactus"
-      />
+    <form name="contactus" action="/thanks" method="post" netlify netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contactus" />
       <v-container fill-height>
         <v-card color="transparent">
-
           <SectionHeader subHeader="Contacto" />
           <v-row>
             <v-col cols="12">
@@ -45,7 +33,7 @@
               </div>
             </v-col>
 
-            <!-- <v-col cols="12">
+            <v-col cols="12">
               <div>
                 <v-text-field
                   label="Telefono*"
@@ -56,7 +44,7 @@
                   color="#404b87"
                 />
               </div>
-            </v-col> -->
+            </v-col>
 
             <v-col cols="12">
               <div>
@@ -73,12 +61,7 @@
             <div>
               <v-container>
                 <v-col text-center>
-                  <v-btn
-                    type="submit"
-                    value="Send message"
-                    color="#404b87"
-                    dark
-                  >Enviar</v-btn>
+                  <v-btn type="submit" value="Send message" color="#404b87" dark>Enviar</v-btn>
                 </v-col>
               </v-container>
             </div>

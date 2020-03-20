@@ -2,16 +2,14 @@
   <div>
     <v-app-bar
       app
-      height="75px"
+      height="95px"
       dark
       v-scroll="onScroll"
       :color="!isScrolling ? 'transparent' : '#404b87'"
       :flat="!isScrolling"
     >
       <VuetifyLogo />
-
     </v-app-bar>
-
   </div>
 </template>
 

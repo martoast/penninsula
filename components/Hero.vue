@@ -8,32 +8,18 @@
   >
     <!-- <LogoCard /> -->
     <v-container fill-height>
-      <v-card
-        class="mx-auto"
-        max-width="800"
-        outlined
-        color="transparent"
-        dark
-      >
-        <div class="hidden-md-and-up">
+      <v-card class="mx-auto" max-width="800" outlined color="transparent" dark>
+        <div>
           <v-row justify="center">
             <VuetifyLogoMobile />
           </v-row>
-
         </div>
-        <v-row
-          justify="center"
-          align="center"
-        >
-          <h1 class="mb-4 display-2 text-center">Primer lifestyle mall de Tijuana</h1>
+        <v-row justify="center" align="center">
+          <h1 class="mb-4 display-2 text-center">Primer Lifestyle Mall de Tijuana</h1>
         </v-row>
 
         <div>
-          <v-row
-            justify="center"
-            align="center"
-          >
-
+          <v-row justify="center" align="center">
             <h2 class="title font-weight-light text-center">
               <strong>Todo lo que necesitas a 10 minutos de tu casa.</strong>
             </h2>

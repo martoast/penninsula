@@ -1,15 +1,11 @@
 <template>
-  <img
-    class="VuetifyLogo"
-    alt="Vuetify Logo"
-    src="~/assets/PENINSULALOGOnegro.png"
-  />
+  <img class="VuetifyLogo" alt="Vuetify Logo" src="~/assets/PENINSULALOGOnegro.png" />
 </template>
 
 <style>
 .VuetifyLogo {
-  width: 101px;
-  height: 50px;
+  width: 200px;
+  height: 95px;
   transform: rotateY(560deg);
   animation: turn 3.5s ease-out forwards 1s;
 }

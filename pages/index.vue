@@ -3,10 +3,7 @@
     <v-sheet height="400px">
       <div>
         <v-row justify="center">
-          <v-col
-            cols="12"
-            md="8"
-          >
+          <v-col cols="12" md="8">
             <div>
               <SectionHeader
                 header="bienvenido a"
@@ -33,6 +30,9 @@
           ></iframe>
         </div>
       </v-container>
+    </section>
+    <section id="contact">
+      <About />
     </section>
     <section id="contact">
       <About2 />
