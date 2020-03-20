@@ -3,17 +3,17 @@
     <section class="white">
       <v-container>
         <v-row>
-          <v-col cols="12" md="5" offset-md="1">
-            <h2 :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']" class="mb-4">
-              My name is Alex Martos.
-              <br />I want to design your next infrastructure.
-            </h2>
+          <v-col cols="12" md="5">
+            <h2
+              :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
+              class="mb-4"
+            >Aquí no solo empieza la patria, empieza península.</h2>
 
             <p
               class="subtitle-1"
-            >Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec vitae orci sed dolor rutrum auctor. Proin pretium, leo ac pellentesque mollis, felis nunc ultrices eros, sed gravida augue augue mollis justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum ullamcorper mauris at ligula.</p>
+            >Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad.</p>
           </v-col>
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" offset-md="1">
             <Carrousel />
           </v-col>
         </v-row>

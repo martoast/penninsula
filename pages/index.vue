@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-sheet height="400px">
+    <v-sheet height="385px">
       <div>
         <v-row justify="center">
-          <v-col cols="12" md="8">
-            <div>
+          <v-col cols="12">
+            <div class="pt-7">
               <SectionHeader
                 header="bienvenido a"
                 subHeader="Un Destino de

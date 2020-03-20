@@ -3,7 +3,7 @@
     <form name="contactus" action="/thanks" method="post" netlify netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contactus" />
       <v-container fill-height>
-        <v-card color="transparent">
+        <v-card color="transparent" flat>
           <SectionHeader subHeader="Contacto" />
           <v-row>
             <v-col cols="12">
@@ -45,6 +45,14 @@
                 />
               </div>
             </v-col>
+            <v-col cols="12">
+              <v-select
+                :items="['Busco informacion General.', 'Me interesa formar parte de Peninsula.', ]"
+                label="Razón por contactar*"
+                required
+                outlined
+              ></v-select>
+            </v-col>
 
             <v-col cols="12">
               <div>
@@ -60,9 +68,15 @@
             </v-col>
             <div>
               <v-container>
-                <v-col text-center>
-                  <v-btn type="submit" value="Send message" color="#404b87" dark>Enviar</v-btn>
-                </v-col>
+                <v-btn
+                  type="submit"
+                  value="Send message"
+                  color="#404b87"
+                  dark
+                  block
+                  x-large
+                  outlined
+                >Enviar</v-btn>
               </v-container>
             </div>
           </v-row>

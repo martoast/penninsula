@@ -21,7 +21,10 @@
         <div>
           <v-row justify="center" align="center">
             <h2 class="title font-weight-light text-center">
-              <strong>Todo lo que necesitas a 10 minutos de tu casa.</strong>
+              <strong>
+                Todo lo que necesitas a
+                <br class="hidden-md-and-up" />10 minutos de tu casa.
+              </strong>
             </h2>
           </v-row>
         </div>
