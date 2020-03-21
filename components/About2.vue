@@ -18,13 +18,15 @@
 
                   <v-col cols="12">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6996653.320726327!2d-104.56654057311077!3d31.100430144601546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864070360b823249%3A0x16eb1c8f1808de3c!2sTexas!5e0!3m2!1sen!2sus!4v1563207206020!5m2!1sen!2sus"
                       width="100%"
                       height="600"
+                      id="gmap_canvas"
+                      src="https://maps.google.com/maps?q=V%C3%ADa%20R%C3%A1pida%20Ote.%2015000%2C%20Chapultepec%20Alamar%2C%2022150%20Tijuana%2C%20B.C.&t=&z=13&ie=UTF8&iwloc=&output=embed"
                       frameborder="0"
-                      style="border:0"
-                      allowfullscreen
-                    />
+                      scrolling="no"
+                      marginheight="0"
+                      marginwidth="0"
+                    ></iframe>
                   </v-col>
                 </v-row>
               </v-container>
