@@ -12,7 +12,8 @@
           justify="center"
         >
           <h3 class="headline font-weight-light ">
-            Want to see for yourself? Checkout our vast component options!
+
+            Explora todo o que ofrece Peninsula!
           </h3>
 
           <v-spacer class="hidden-sm-and-down" />

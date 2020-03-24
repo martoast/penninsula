@@ -77,6 +77,22 @@
           </div>
         </v-row>
       </v-card>
+      <div class="hidden-md-and-down">
+        <v-card
+          class="pa-2 align-self-start"
+          outlined
+          tile
+          color="transparent"
+        >
+          <div class="hidden-md-and-down">
+            <v-card
+              width="200"
+              color="transparent"
+            ></v-card>
+
+          </div>
+        </v-card>
+      </div>
 
     </v-card>
 
