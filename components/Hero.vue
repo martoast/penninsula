@@ -7,7 +7,7 @@
       class="white--text"
       gradient="to top, rgba(64, 75, 135, 0.5), rgba(25, 25, 38, .85)"
     >
-      <div>
+      <div class="hidden-md-and-down">
         <VuetifyLogoMobile />
       </div>
 
@@ -19,11 +19,11 @@
           color="transparent"
           dark
         >
-          <!-- <div>
-          <v-row justify="center">
-            <VuetifyLogoMobile />
-          </v-row>
-        </div> -->
+          <div class="hidden-md-and-up">
+            <v-row justify="center">
+              <VuetifyLogoMobile />
+            </v-row>
+          </div>
           <v-row
             justify="center"
             align="center"

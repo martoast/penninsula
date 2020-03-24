@@ -3,7 +3,7 @@
     <v-sheet
       color="primary darken-2"
       dark
-      height="75"
+      min-height="75"
     >
       <v-container>
         <v-row

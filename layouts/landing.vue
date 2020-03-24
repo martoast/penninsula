@@ -3,7 +3,9 @@
     <!-- <div class="hidden-md-and-down">
       <AppBar />
     </div>-->
-    <Demo />
+    <div class="hidden-md-and-down">
+      <Demo />
+    </div>
 
     <div>
       <Hero />
