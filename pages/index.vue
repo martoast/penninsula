@@ -31,7 +31,7 @@
         </div>
       </v-container>
     </section>
-    <section id="contact">
+    <section>
       <About />
     </section>
     <section id="contact">
