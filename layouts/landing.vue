@@ -3,6 +3,7 @@
     <!-- <div class="hidden-md-and-down">
       <AppBar />
     </div>-->
+    <Demo />
 
     <div>
       <Hero />
@@ -28,6 +29,8 @@ import About2 from "~/components/About2.vue";
 import SectionHeader from "~/components/SectionHeader.vue";
 import VideoDialog from "~/components/VideoDialog.vue";
 import Hero from "~/components/Hero.vue";
+import Demo from "~/components/Demo.vue";
+import VuetifyLogoMobile from "~/components/VuetifyLogoMobile.vue";
 
 export default {
   components: {
@@ -39,7 +42,9 @@ export default {
     About2,
     SectionHeader,
     VideoDialog,
-    Hero
+    Hero,
+    Demo,
+    VuetifyLogoMobile
   },
 
   data() {

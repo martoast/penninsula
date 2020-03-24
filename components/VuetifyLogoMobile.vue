@@ -1,11 +1,16 @@
 <template>
-  <img class="VuetifyLogoMobile" alt="Vuetify Logo" src="~/assets/PENINSULALOGOnegro.png" />
+  <img
+    class="VuetifyLogoMobile"
+    alt="Vuetify Logo"
+    src="~/assets/PENINSULALOGOnegro.png"
+  />
 </template>
 
 <style>
 .VuetifyLogoMobile {
-  width: 250px;
-  height: 120px;
+  width: 200px;
+  height: 100px;
+  padding-inline: 10px;
 
   padding-bottom: 10px;
 }

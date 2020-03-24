@@ -1,9 +1,25 @@
 <template>
-  <v-container fill-height>
-    <form name="contactus" action="/thanks" method="post" netlify netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contactus" />
+  <v-container
+    fill-height
+    id="contact-us"
+  >
+    <form
+      name="contactus"
+      action="/thanks"
+      method="post"
+      netlify
+      netlify-honeypot="bot-field"
+    >
+      <input
+        type="hidden"
+        name="form-name"
+        value="contactus"
+      />
       <v-container fill-height>
-        <v-card color="transparent" flat>
+        <v-card
+          color="transparent"
+          flat
+        >
           <SectionHeader subHeader="Contacto" />
           <v-row>
             <v-col cols="12">
