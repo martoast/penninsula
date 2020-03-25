@@ -14,7 +14,7 @@
             <v-container>
 
               <SectionHeader
-                subHeader="Aquí no solo empieza la patria, empieza península."
+                subHeader="Aquí no solo empieza la patria, empieza Península."
                 text="Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad."
               />
 
