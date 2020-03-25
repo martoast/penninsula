@@ -12,7 +12,9 @@
           outlined
           rounded
           v-on="on"
-        >Ver Video</v-btn>
+        >
+          <v-icon>mdi-play-circle</v-icon> Ver Video
+        </v-btn>
       </template>
 
       <div>
