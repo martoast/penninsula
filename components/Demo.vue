@@ -3,7 +3,7 @@
     <v-sheet
       color="primary darken-2"
       dark
-      min-height="65"
+      max-height="50"
     >
       <v-container>
         <v-row
@@ -20,7 +20,7 @@
 
           <v-btn
             large
-            min-width="128"
+            height="35"
             rel="noopener"
             rounded
             target="_blank"
