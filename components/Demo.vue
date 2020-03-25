@@ -1,38 +1,35 @@
 <template>
   <section id="demo">
-    <v-sheet
+
+    <v-toolbar
       color="primary darken-2"
       dark
       max-height="50"
     >
       <v-container>
-        <v-row
-          align="center"
-          class="text-md-left text-center"
-          justify="center"
-        >
-          <h3 class="headline font-weight-light ">
+        <v-row>
+          <h2 class="title font-weight-light text-center">
 
-            Explora todo o que ofrece Peninsula!
-          </h3>
+            Explora todo lo que ofrece Peninsula!
+          </h2>
 
-          <v-spacer class="hidden-sm-and-down" />
+          <v-spacer />
 
           <v-btn
             large
-            height="35"
-            rel="noopener"
+            height="25"
             rounded
-            target="_blank"
             color="white"
             @click="$vuetify.goTo('#contact-us')"
             light
           >
             Solicitar Info
           </v-btn>
+
         </v-row>
       </v-container>
-    </v-sheet>
+
+    </v-toolbar>
 
   </section>
 </template>

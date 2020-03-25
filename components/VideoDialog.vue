@@ -13,7 +13,7 @@
           rounded
           v-on="on"
         >
-          <v-icon>mdi-play-circle</v-icon> Ver Video
+          <v-icon class="pr-1">mdi-play-circle</v-icon> Ver Video
         </v-btn>
       </template>
 
