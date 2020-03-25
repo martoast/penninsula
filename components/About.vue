@@ -1,22 +1,41 @@
 <template>
   <div>
     <section class="white">
-      <v-container>
-        <v-row>
-          <!-- <v-col cols="12" md="5">
-            <h2
-              :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
-              class="mb-4"
-            >Aquí no solo empieza la patria, empieza península.</h2>
+      <div class="pd-7 pt-7">
+        <v-card
+          class="d-flex align-center justify-center mb-6"
+          flat
+          height="350px"
+        >
+          <v-card
+            flat
+            class="pa-2"
+          >
+            <v-container>
 
-            <p
-              class="subtitle-1"
-            >Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad.</p>
-          </v-col>-->
-          <v-col cols="12" md="12">
+              <SectionHeader
+                subHeader="Aquí no solo empieza la patria, empieza península."
+                text="Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad."
+              />
+
+            </v-container>
+
+          </v-card>
+        </v-card>
+
+      </div>
+      <v-container>
+
+        <v-row>
+
+          <v-col
+            cols="12"
+            md="12"
+          >
             <Carrousel />
           </v-col>
         </v-row>
+
       </v-container>
     </section>
   </div>
@@ -24,8 +43,9 @@
 
 <script>
 import Carrousel from "~/components/Carrousel.vue";
+import SectionHeader from "~/components/SectionHeader";
 export default {
-  components: { Carrousel },
+  components: { Carrousel, SectionHeader },
   data: () => ({
     src: require("@/assets/COMINGSOON.jpg"),
     highlights: [
