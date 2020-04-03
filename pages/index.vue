@@ -37,6 +37,10 @@
     <section id="contact">
       <About2 />
     </section>
+    <section>
+      <div class="elfsight-app-3e870a85-1b3b-472a-abd7-51da13156a0f"></div>
+    </section>
+
   </div>
 </template>
 
@@ -55,6 +59,15 @@ import About from "~/components/About.vue";
 import About2 from "~/components/About2.vue";
 
 export default {
+  head() {
+    return {
+      script: [
+        {
+          src: "https://apps.elfsight.com/p/platform.js"
+        }
+      ]
+    };
+  },
   layout: "landing",
   mixins: [validationMixin],
 

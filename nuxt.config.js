@@ -29,8 +29,8 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: ['~/plugins/vue-instagram']
+  ,
   /*
   ** Nuxt.js dev-modules
   */
