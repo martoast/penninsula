@@ -8,8 +8,8 @@
               <SectionHeader
                 header="bienvenido a"
                 subHeader="Un Destino de
-              Experiencias"
-                text="Península propone innovar el concepto de entretenimiento utilizando las tradiciones culinarias de la Baja junto cono el auge cultural y artístico que tanto caracteriza el estado."
+              Experiencias Nuevas."
+                text="Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad."
               />
             </div>
           </v-col>
@@ -19,6 +19,15 @@
     <section>
       <v-container>
         <div>
+          <div>
+            <v-row justify="center">
+              <v-col cols="12">
+                <div class="pt-7">
+                  <SectionHeader subHeader="El mall del futuro es menos retail, más estilo de vida y espacios de entretenimiento." />
+                </div>
+              </v-col>
+            </v-row>
+          </div>
           <iframe
             allowfullscreen="true"
             title="panorama"
