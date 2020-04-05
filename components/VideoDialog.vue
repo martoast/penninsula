@@ -2,7 +2,7 @@
   <div class="text-center">
     <v-dialog
       v-model="dialog"
-      width="660"
+      fullscreen
     >
       <template v-slot:activator="{ on }">
         <v-btn
@@ -16,12 +16,24 @@
           <v-icon class="pr-1">mdi-play-circle</v-icon> Ver Video
         </v-btn>
       </template>
+      <v-toolbar
+        dark
+        color="#404b87"
+      >
+        <v-btn
+          icon
+          dark
+          @click="dialog = false"
+        >
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
+
+      </v-toolbar>
 
       <div>
         <div align="center">
           <iframe
-            width="100%"
-            height="415"
+            style="position:fixed; top:55px; left:0; bottom:0; right:0; width:100%; height:100vh; border:none; margin:0; padding:0; z-index:999999;"
             src="https://www.youtube.com/embed/UD7axQ9U9Wk"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
