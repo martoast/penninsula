@@ -1,22 +1,27 @@
 <template>
-  <v-app>
+  <div>
+    <AppBar />
+    <v-app>
 
-    <div class="hidden-md-and-down">
-      <Demo />
-    </div>
+      <div class="hidden-md-and-down">
+        <Demo />
+      </div>
 
-    <div>
-      <Hero />
-    </div>
+      <div>
+        <Hero />
+      </div>
 
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
+      <v-content>
+        <v-container>
+          <nuxt />
+        </v-container>
+      </v-content>
 
-    <Footer />
-  </v-app>
+      <Footer />
+    </v-app>
+
+  </div>
+
 </template>
 
 <script>

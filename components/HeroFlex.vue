@@ -65,8 +65,8 @@
           <v-btn
             class="text--primary my-2"
             color="white"
-            large
-            min-width="175"
+            x-large
+            min-width="245"
             rounded
             @click="$vuetify.goTo('#contact')"
           >Solicitar Info</v-btn>

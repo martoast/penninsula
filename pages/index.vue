@@ -1,28 +1,36 @@
 <template>
   <div>
-    <v-sheet height="385px">
-      <div>
-        <v-row justify="center">
-          <v-col cols="12">
-            <div class="pt-7">
-              <SectionHeader
-                header="bienvenido a"
-                subHeader="Un Destino de
+    <div>
+      <v-sheet height="350px">
+        <div>
+          <v-row justify="center">
+            <v-col cols="12">
+              <div class="pt-7">
+                <SectionHeader
+                  header="bienvenido a"
+                  subHeader="Un Destino de
               Experiencias Nuevas."
-                text="Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad."
-              />
-            </div>
-          </v-col>
-        </v-row>
+                  text="Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad."
+                />
+              </div>
+            </v-col>
+          </v-row>
+        </div>
+
+      </v-sheet>
+      <div>
+        <Features />
       </div>
-    </v-sheet>
+
+    </div>
+
     <section>
       <v-container>
         <div>
           <div>
             <v-row justify="center">
               <v-col cols="12">
-                <div class="pt-7">
+                <div>
                   <SectionHeader subHeader="El mall del futuro es menos retail, más estilo de vida y espacios de entretenimiento." />
                 </div>
               </v-col>
@@ -66,6 +74,7 @@ import SectionHeader from "~/components/SectionHeader.vue";
 import SlideGroup2 from "~/components/SlideGroup2.vue";
 import About from "~/components/About.vue";
 import About2 from "~/components/About2.vue";
+import Features from "~/components/Features.vue";
 
 export default {
   head() {
@@ -100,7 +109,8 @@ export default {
     SectionHeader,
     SlideGroup2,
     About,
-    About2
+    About2,
+    Features
   },
 
   data: () => ({
