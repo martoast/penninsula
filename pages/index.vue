@@ -49,6 +49,11 @@
       </v-container>
     </section>
     <section>
+      <div>
+        <VideoSheet />
+      </div>
+    </section>
+    <section>
       <About />
     </section>
     <section id="contact">
@@ -75,6 +80,7 @@ import SlideGroup2 from "~/components/SlideGroup2.vue";
 import About from "~/components/About.vue";
 import About2 from "~/components/About2.vue";
 import Features from "~/components/Features.vue";
+import VideoSheet from "~/components/VideoSheet.vue";
 
 export default {
   head() {
@@ -110,7 +116,8 @@ export default {
     SlideGroup2,
     About,
     About2,
-    Features
+    Features,
+    VideoSheet
   },
 
   data: () => ({

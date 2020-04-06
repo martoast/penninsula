@@ -51,28 +51,37 @@ export default {
     return {
       features: [
         {
-          icon: "mdi-football",
-          title: "area de deportes",
-          text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+          icon: "mdi-account",
+          title: "Nivel Socio Economico",
+          text: "A / B"
         },
         {
           icon: "mdi-account-group-outline",
           title: "Afluencia Promedio",
-          text:
-            "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
+          text: "10 millones de personas al año 27,000 persona al día."
         },
+        {
+          icon: "mdi-account",
+          title: "Amenidades",
+          text:
+            "Estacionamiento 3,400 cajones 45,000 m2 de áreas comunes 3 parques"
+        },
+        {
+          icon: "mdi-movie",
+          title: "Entretenimiento",
+          text:
+            "Cinepolis 15 salas (incluye VIP), arcadias, boliche, pista de patinaje, gimnasio, centro acquatico, spa, y mucho más."
+        },
+
         {
           icon: "mdi-shopping",
           title: "Area de Shopping",
-          text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+          text: "64,000 m2 de fast fashion 21,000 m2 de Liverpool"
         },
         {
           icon: "mdi-home-modern",
           title: "Hotel",
-          text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+          text: "de 180 habitaciones"
         },
         {
           icon: "mdi-food",
@@ -81,10 +90,15 @@ export default {
             "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
         },
         {
-          icon: "mdi-laptop",
+          icon: "mdi-home-modern",
           title: "Oficinas y  Departamentos",
+          text: "Torre oficina 10,000+ m2 y 180+ departamentos"
+        },
+        {
+          icon: " mdi-football",
+          title: "Vida Activa",
           text:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam"
+            "Cinepolis 15 salas (incluye VIP), arcadias, boliche, pista de patinaje, gimnasio, centro acquatico, spa, y mucho más."
         }
       ],
       stats: [
