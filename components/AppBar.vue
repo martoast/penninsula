@@ -32,16 +32,17 @@
         >
           <span v-text="item.text" />
         </v-btn>
-        <v-btn
-          height="25"
-          color="white"
-          @click="$vuetify.goTo('#contact')"
-          light
-          class="ml-12"
-        >
-          Solicitar Info
-        </v-btn>
+
       </v-toolbar-items>
+      <v-btn
+        height="25"
+        color="white"
+        @click="$vuetify.goTo('#contact')"
+        light
+        class="ml-12 justify-space-around"
+      >
+        Solicitar Info
+      </v-btn>
 
     </v-toolbar>
   </div>

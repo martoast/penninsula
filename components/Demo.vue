@@ -16,7 +16,6 @@
           <v-btn
             large
             height="25"
-            rounded
             color="white"
             @click="$vuetify.goTo('#contact')"
             light

@@ -33,9 +33,11 @@
           tile
           color="#404b87"
         >
-          <v-card-title>
-
-            <ul class="body-1 pl-0">
+          <v-row
+            justify="space-around"
+            align="center"
+          >
+            <ul class="body-1 pa-0">
               <li
                 v-for="(c, i) in company"
                 :key="i"
@@ -49,9 +51,17 @@
               </li>
             </ul>
 
-            <v-spacer></v-spacer>
+            <ul class="body-1 pa-0 justify-end">
 
-            <v-col
+              <li
+                v-for="([icon, info1, info2], i) in details"
+                :key="i"
+              >{{info1}}<br> {{info2}}</li>
+
+            </ul>
+          </v-row>
+
+          <!-- <v-col
               v-for="([icon, info1, info2], i) in details"
               :key="i"
               cols="12"
@@ -60,7 +70,7 @@
               <div class="hidden-md-and-down">
                 <div class="text-center">
                   <v-icon
-                    size="64"
+                    size="34"
                     class="mb-3"
                     v-text="icon"
                   />
@@ -73,9 +83,7 @@
 
               </div>
 
-            </v-col>
-
-          </v-card-title>
+            </v-col> -->
 
         </v-card>
 
