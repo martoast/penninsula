@@ -50,16 +50,16 @@
 
             <div align="center">
               <v-container>
-                <v-card>
-                  <iframe
-                    style="top:55px; left:0; bottom:0; right:0; width:90vh; height: 400px; border:none; margin:0; padding:0; z-index:999999;"
-                    src="https://www.youtube.com/embed/UD7axQ9U9Wk"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
 
-                </v-card>
+                <iframe
+                  style="top:55px; left:0; bottom:0; right:0; height: 400px; border:none; margin:0; padding:0; z-index:999999;"
+                  src="https://www.youtube.com/embed/UD7axQ9U9Wk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  width="100%"
+                ></iframe>
+
               </v-container>
 
             </div>
