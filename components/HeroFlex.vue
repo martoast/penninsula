@@ -63,8 +63,8 @@
 
         <v-row justify="center">
           <v-btn
-            class="text--primary my-2"
-            color="white"
+            class="text--white my-2"
+            color="#BF9B2A"
             x-large
             min-width="245"
             rounded

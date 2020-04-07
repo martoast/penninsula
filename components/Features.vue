@@ -17,7 +17,7 @@
             <v-theme-provider dark>
               <div>
                 <v-avatar
-                  color="#404b87"
+                  color="#71A5D6"
                   size="88"
                 >
                   <v-icon

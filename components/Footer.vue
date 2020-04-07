@@ -27,13 +27,14 @@
           </v-card-text>
 
         </v-card>
-        <v-row class="ma-0">
-          <v-col
-            class="py-5 white--text"
-            cols="12"
-            md="3"
-          >
-            <h3 class="headline mb-3">Boost Media Inc</h3>
+        <v-card
+          class="flex"
+          flat
+          tile
+          color="#404b87"
+        >
+          <v-card-title>
+
             <ul class="body-1 pl-0">
               <li
                 v-for="(c, i) in company"
@@ -47,36 +48,37 @@
                 />
               </li>
             </ul>
-          </v-col>
-          <v-col
-            class="white--text pa-5"
-            cols="12"
-            md="9"
-          >
-            <v-row
-              class="hidden-sm-and-down"
-              justify="end"
-            >
-              <v-col
-                v-for="(category, i) in categories"
-                :key="i"
-                cols="12"
-                md="6"
-              >
-                <v-btn
-                  text
-                  v-text="category.title"
-                  :to="category.link"
-                ></v-btn>
-              </v-col>
-            </v-row>
-          </v-col>
 
-          <v-col
-            class="text-center black white--text pa-3"
-            cols="12"
-          >&copy; 2020 Boost Media Inc — All Rights reserved.</v-col>
-        </v-row>
+            <v-spacer></v-spacer>
+
+            <v-col
+              v-for="([icon, info1, info2], i) in details"
+              :key="i"
+              cols="12"
+              md="3"
+            >
+              <div class="hidden-md-and-down">
+                <div class="text-center">
+                  <v-icon
+                    size="64"
+                    class="mb-3"
+                    v-text="icon"
+                  />
+                  <div
+                    class="mb-2 headline"
+                    v-text="info1"
+                  />
+                  <div v-text="info2" />
+                </div>
+
+              </div>
+
+            </v-col>
+
+          </v-card-title>
+
+        </v-card>
+
       </v-footer>
     </div>
 
@@ -105,6 +107,15 @@ export default {
       "mdi-google-plus",
       "mdi-linkedin",
       "mdi-instagram"
+    ],
+    details: [
+      [
+        "mdi-crosshairs-gps",
+        "Vía Rápida Oriente 15000",
+        "Tijuana, Baja California"
+      ],
+      ["mdi-email", "", "info@peninsulatijuana.com"],
+      ["mdi-phone", "+52 (664) 684 85 40", ""]
     ]
   })
 };

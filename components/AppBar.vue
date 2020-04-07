@@ -2,12 +2,24 @@
   <div>
     <v-app-bar
       app
-      height="65px"
+      height="55px"
       dark
       v-scroll="onScroll"
-      :color="!isScrolling ? '#4C4C4C' : '#404b87'"
+      :color="!isScrolling ? '#404b87' : '#404b87'"
       flat
     >
+      <!-- <v-toolbar-items>
+        <v-btn
+          color="white"
+          large
+          min-width="175"
+          outlined
+          rounded
+          v-on="on"
+        >
+          Solicitar Info
+        </v-btn>
+      </v-toolbar-items> -->
       <v-spacer />
 
       <v-toolbar-items class="hidden-sm-and-down">

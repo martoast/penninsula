@@ -10,34 +10,36 @@
           >
 
             <div>
+              <v-row justify="center">
+                <h2
+                  :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
+                  class="mb-4"
+                >
+                  We use the best platforms around!<br />
+                </h2>
 
-              <h2
-                :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
-                class="mb-4"
-              >
-                We use the best platforms around!<br />
-              </h2>
+                <p class="subtitle-1">
+                  Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec
+                  vitae orci sed dolor rutrum auctor. Proin pretium, leo ac
+                  pellentesque mollis, felis nunc ultrices eros, sed gravida augue
+                  augue mollis justo. Lorem ipsum dolor sit amet, consectetuer
+                  adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy
+                  id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu
+                  pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum
+                  ullamcorper mauris at ligula.
+                </p>
 
-              <p class="subtitle-1">
-                Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec
-                vitae orci sed dolor rutrum auctor. Proin pretium, leo ac
-                pellentesque mollis, felis nunc ultrices eros, sed gravida augue
-                augue mollis justo. Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy
-                id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu
-                pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum
-                ullamcorper mauris at ligula.
-              </p>
+                <v-btn
+                  outlined
+                  color="#BF9B2A"
+                  class="px-5"
+                  x-large
+                  to="/contact"
+                >
+                  Contact Us
+                </v-btn>
 
-              <v-btn
-                outlined
-                color="primary"
-                class="px-5"
-                x-large
-                to="/contact"
-              >
-                Contact Us
-              </v-btn>
+              </v-row>
 
             </div>
 
