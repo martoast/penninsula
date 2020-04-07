@@ -2,19 +2,19 @@
   <div class="pt-12">
     <section class="grey lighten-3">
       <v-container>
-        <v-row align="center">
+        <v-row
+          align="center"
+          justify="center"
+        >
           <v-col
             cols="12"
             md="5"
             offset-xl="1"
           >
 
-            <div>
+            <div class="ma-12">
               <v-row justify="center">
-                <h2
-                  :class="[$vuetify.breakpoint.mdAndUp ? 'display-1' : 'headline']"
-                  class="mb-4"
-                >
+                <h2 class="mb-4 headline">
                   We use the best platforms around!<br />
                 </h2>
 

@@ -12,7 +12,7 @@
   height: 80px;
   padding-inline: 10px;
 
-  padding-top: 12px;
+  padding-top: 20px;
 }
 
 @keyframes turn {

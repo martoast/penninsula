@@ -6,12 +6,11 @@
       v-scroll="onScroll"
       color="transparent"
       flat
-      class="mb-6"
     >
 
       <div class="hidden-md-and-down ma-12">
         <v-card
-          class="pa-2"
+          class="pa-12"
           outlined
           tile
           color="transparent"
@@ -32,6 +31,15 @@
           @click="$vuetify.goTo(item.scroll)"
         >
           <span v-text="item.text" />
+        </v-btn>
+        <v-btn
+          height="25"
+          color="white"
+          @click="$vuetify.goTo('#contact')"
+          light
+          class="ml-12"
+        >
+          Solicitar Info
         </v-btn>
       </v-toolbar-items>
 

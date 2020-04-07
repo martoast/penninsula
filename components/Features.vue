@@ -86,8 +86,7 @@ export default {
         {
           icon: "mdi-food",
           title: "Destino Gastronomico",
-          text:
-            "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit."
+          text: "20+ restaurantes & bares foodhall y mercado gourmet."
         },
         {
           icon: "mdi-home-modern",
