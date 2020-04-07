@@ -7,13 +7,11 @@
       max-height="50"
     >
       <v-container>
-        <v-row>
+        <v-row justify="center">
           <h2 class="title font-weight-light text-center">
 
             Explora todo lo que ofrece Peninsula!
           </h2>
-
-          <v-spacer />
 
           <v-btn
             large
@@ -22,6 +20,7 @@
             color="white"
             @click="$vuetify.goTo('#contact-us')"
             light
+            class="ml-12"
           >
             Solicitar Info
           </v-btn>

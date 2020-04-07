@@ -4,13 +4,14 @@
       height="55px"
       dark
       v-scroll="onScroll"
-      :color="!isScrolling ? 'transparent' : '#404b87'"
+      color="transparent"
       flat
+      class="mb-6"
     >
 
-      <div class="hidden-md-and-down">
+      <div class="hidden-md-and-down ma-12">
         <v-card
-          class="pa-2 align-self-start"
+          class="pa-2"
           outlined
           tile
           color="transparent"
@@ -22,7 +23,7 @@
       </div>
       <v-spacer />
 
-      <v-toolbar-items class="hidden-sm-and-down">
+      <v-toolbar-items class="hidden-sm-and-down ma-12">
         <v-btn
           v-for="(item, i) in items"
           :key="i"

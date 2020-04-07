@@ -1,43 +1,25 @@
 <template>
   <div>
-    <v-card
-      class="d-flex mb-6"
-      color="transparent"
-      flat
-      height="100vh"
-      tile
-    >
-      <!-- <div class="hidden-md-and-down">
-        <v-card
-          class="pa-2 align-self-start"
-          outlined
-          tile
-          color="transparent"
-        >
-          <div class="hidden-md-and-down">
-            <VuetifyLogoMobile />
-          </div>
-        </v-card>
-      </div> -->
 
+    <v-card
+      height="100vh"
+      color="transparent"
+      class="d-flex pb-12 justify-center"
+      flat
+      dark
+    >
       <v-card
-        class="mx-auto align-self-center"
-        outlined
+        class="align-self-center"
         color="transparent"
-        dark
-        tile
+        flat
       >
         <div class="hidden-md-and-up">
           <v-row justify="center">
             <VuetifyLogoMobile />
           </v-row>
         </div>
-        <v-row
-          justify="center"
-          align="center"
-        >
-          <h1 class="mb-4 display-2 text-center">Primer Lifestyle Mall de Tijuana</h1>
-        </v-row>
+
+        <h1 class="mb-4 display-2 text-center">Primer Lifestyle Mall de Tijuana</h1>
 
         <div>
           <v-row
@@ -76,23 +58,8 @@
             <VideoDialog />
           </div>
         </v-row>
-      </v-card>
-      <div class="hidden-md-and-down">
-        <v-card
-          class="pa-2 align-self-start"
-          outlined
-          tile
-          color="transparent"
-        >
-          <div class="hidden-md-and-down">
-            <v-card
-              width="200"
-              color="transparent"
-            ></v-card>
 
-          </div>
-        </v-card>
-      </div>
+      </v-card>
 
     </v-card>
 
