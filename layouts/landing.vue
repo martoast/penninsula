@@ -3,7 +3,10 @@
     <!-- <AppBar /> -->
     <v-app>
 
-      <div class="hidden-md-and-down">
+      <div
+        class="hidden-md-and-down"
+        id="home"
+      >
         <Demo />
       </div>
 

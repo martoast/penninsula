@@ -34,9 +34,9 @@
                   color="#BF9B2A"
                   class="px-5"
                   x-large
-                  to="/contact"
+                  @click="$vuetify.goTo('#contact')"
                 >
-                  Contact Us
+                  Solicitar Info
                 </v-btn>
 
               </v-row>

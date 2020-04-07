@@ -18,7 +18,7 @@
             height="25"
             rounded
             color="white"
-            @click="$vuetify.goTo('#contact-us')"
+            @click="$vuetify.goTo('#contact')"
             light
             class="ml-12"
           >

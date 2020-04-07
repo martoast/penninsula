@@ -28,8 +28,8 @@
           v-for="(item, i) in items"
           :key="i"
           :active-class="!isScrolling ? 'primary--text' : undefined"
-          :to="item.to"
           text
+          @click="$vuetify.goTo(item.scroll)"
         >
           <span v-text="item.text" />
         </v-btn>
@@ -63,16 +63,19 @@ export default {
       return [
         {
           to: "/",
-          text: "Home"
+          text: "Home",
+          scroll: "#home"
         },
         {
           to: "/proyecto",
-          text: "Proyecto"
+          text: "Proyecto",
+          scroll: "#project"
         },
 
         {
           to: "/contacto",
-          text: "Contacto"
+          text: "Contacto",
+          scroll: "#contact"
         }
       ];
     }
