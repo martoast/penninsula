@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppBar />
+    <!-- <AppBar /> -->
     <v-app>
 
       <div class="hidden-md-and-down">

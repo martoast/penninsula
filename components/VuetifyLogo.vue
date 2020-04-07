@@ -1,13 +1,18 @@
 <template>
-  <img class="VuetifyLogo" alt="Vuetify Logo" src="~/assets/PENINSULALOGOnegro.png" />
+  <img
+    class="VuetifyLogo"
+    alt="Vuetify Logo"
+    src="~/assets/PENINSULALOGOnegro.png"
+  />
 </template>
 
 <style>
 .VuetifyLogo {
-  width: 200px;
-  height: 95px;
-  transform: rotateY(560deg);
-  animation: turn 3.5s ease-out forwards 1s;
+  width: 180px;
+  height: 80px;
+  padding-inline: 10px;
+
+  padding-top: 12px;
 }
 
 @keyframes turn {

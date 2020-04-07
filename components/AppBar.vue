@@ -1,25 +1,25 @@
 <template>
   <div>
-    <v-app-bar
-      app
+    <v-toolbar
       height="55px"
       dark
       v-scroll="onScroll"
-      :color="!isScrolling ? '#404b87' : '#404b87'"
+      :color="!isScrolling ? 'transparent' : '#404b87'"
       flat
     >
-      <!-- <v-toolbar-items>
-        <v-btn
-          color="white"
-          large
-          min-width="175"
+
+      <div class="hidden-md-and-down">
+        <v-card
+          class="pa-2 align-self-start"
           outlined
-          rounded
-          v-on="on"
+          tile
+          color="transparent"
         >
-          Solicitar Info
-        </v-btn>
-      </v-toolbar-items> -->
+          <div class="hidden-md-and-down">
+            <VuetifyLogo />
+          </div>
+        </v-card>
+      </div>
       <v-spacer />
 
       <v-toolbar-items class="hidden-sm-and-down">
@@ -34,7 +34,7 @@
         </v-btn>
       </v-toolbar-items>
 
-    </v-app-bar>
+    </v-toolbar>
   </div>
 </template>
 

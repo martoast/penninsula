@@ -7,7 +7,7 @@
       height="100vh"
       tile
     >
-      <div class="hidden-md-and-down">
+      <!-- <div class="hidden-md-and-down">
         <v-card
           class="pa-2 align-self-start"
           outlined
@@ -18,7 +18,7 @@
             <VuetifyLogoMobile />
           </div>
         </v-card>
-      </div>
+      </div> -->
 
       <v-card
         class="mx-auto align-self-center"
