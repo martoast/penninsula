@@ -12,6 +12,7 @@
           <v-card
             class="mx-auto"
             max-width="600"
+            flat
           >
             <v-list flat>
               <v-list-item-group>
@@ -40,10 +41,7 @@
                       class="justify-center font-weight-black text-uppercase"
                       v-text="title"
                     ></v-card-title>
-                    <v-list-item-title
-                      class="justify-center font-weight-black text-uppercase"
-                      v-text="text"
-                    ></v-list-item-title>
+                    <p v-text="text"></p>
                   </v-list-item-content>
                 </v-list-item>
               </v-list-item-group>
@@ -57,6 +55,7 @@
           <v-card
             class="mx-auto"
             max-width="600"
+            flat
           >
             <v-list flat>
               <v-list-item-group>
@@ -85,10 +84,13 @@
                       class="justify-center font-weight-black text-uppercase"
                       v-text="title"
                     ></v-card-title>
-                    <v-list-item-title
+                    <!-- <v-list-item-title
                       class="justify-center font-weight-black text-uppercase"
                       v-text="text"
-                    ></v-list-item-title>
+                    ></v-list-item-title> -->
+
+                    <p v-text="text"></p>
+
                   </v-list-item-content>
                 </v-list-item>
               </v-list-item-group>
@@ -126,9 +128,10 @@ export default {
         },
 
         {
-          icon: "mdi-shopping",
-          title: "Area de Shopping",
-          text: "64,000 m2 de fast fashion 21,000 m2 de Liverpool"
+          icon: " mdi-football",
+          title: "Vida Activa",
+          text:
+            "Cinepolis 15 salas (incluye VIP), arcadias, boliche, pista de patinaje, gimnasio, centro acquatico, spa, y mucho más."
         }
         // {
         //   icon: "mdi-home-modern",
@@ -154,6 +157,16 @@ export default {
       ],
       features2: [
         {
+          icon: "mdi-account",
+          title: "Nivel Socioeconómico",
+          text: "A / B"
+        },
+        {
+          icon: "mdi-shopping",
+          title: "Area de Shopping",
+          text: "64,000 m2 de fast fashion 21,000 m2 de Liverpool"
+        },
+        {
           icon: "mdi-home-modern",
           title: "Hotel",
           text: "de 180 habitaciones"
@@ -167,12 +180,6 @@ export default {
           icon: "mdi-home-modern",
           title: "Oficinas y  Departamentos",
           text: "Torre oficina 10,000+ m2 y 180+ departamentos"
-        },
-        {
-          icon: " mdi-football",
-          title: "Vida Activa",
-          text:
-            "Cinepolis 15 salas (incluye VIP), arcadias, boliche, pista de patinaje, gimnasio, centro acquatico, spa, y mucho más."
         }
       ],
       stats: [
