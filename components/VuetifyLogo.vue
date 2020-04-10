@@ -9,7 +9,7 @@
 <style>
 .VuetifyLogo {
   width: 180px;
-  height: 80px;
+  height: 85px;
   padding-inline: 10px;
 
   padding-top: 20px;

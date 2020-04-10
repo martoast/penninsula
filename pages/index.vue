@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <v-sheet height="350px">
+      <v-sheet height="300px">
         <div>
           <v-row justify="center">
             <v-col cols="12">

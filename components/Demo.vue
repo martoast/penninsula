@@ -2,7 +2,7 @@
   <section id="demo">
 
     <v-toolbar
-      color="primary darken-2"
+      color="#404b87"
       dark
       max-height="50"
     >
