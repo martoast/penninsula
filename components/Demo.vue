@@ -4,10 +4,13 @@
     <v-toolbar
       color="#404b87"
       dark
-      max-height="50"
+      max-height="60px"
     >
       <v-container>
-        <v-row justify="center">
+        <v-row
+          justify="center"
+          align="center"
+        >
           <h2 class="title font-weight-light text-center">
 
             Explora todo lo que ofrece Peninsula!

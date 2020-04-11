@@ -22,7 +22,7 @@
       </div>
       <v-spacer />
 
-      <v-toolbar-items class="hidden-sm-and-down ma-12">
+      <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
           v-for="(item, i) in items"
           :key="i"
@@ -39,7 +39,7 @@
         color="white"
         @click="$vuetify.goTo('#contact')"
         light
-        class="ml-12 justify-space-around"
+        class="mr-12 justify-space-around"
       >
         Solicitar Info
       </v-btn>

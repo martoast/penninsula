@@ -9,10 +9,9 @@
 <style>
 .VuetifyLogo {
   width: 180px;
-  height: 85px;
-  padding-inline: 10px;
+  height: 90px;
 
-  padding-top: 20px;
+  margin-top: 45px;
 }
 
 @keyframes turn {
