@@ -81,7 +81,7 @@
 
                   <v-list-item-content>
                     <v-card-title
-                      class="justify-center font-weight-black"
+                      class="font-weight-black"
                       v-text="title"
                     ></v-card-title>
                     <!-- <v-list-item-title
