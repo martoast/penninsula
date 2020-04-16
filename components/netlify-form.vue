@@ -1,8 +1,5 @@
 <template>
-  <v-container
-    fill-height
-    id="contact-us"
-  >
+  <v-container id="contact-us">
     <form
       name="contactus"
       action="/thanks"
@@ -15,12 +12,12 @@
         name="form-name"
         value="contactus"
       />
-      <v-container fill-height>
+      <v-container>
         <v-card
           color="transparent"
           flat
         >
-          <SectionHeader subHeader="Contacto" />
+          <!-- <SectionHeader subHeader="Contacto" /> -->
           <v-row>
             <v-col cols="12">
               <div>
@@ -32,10 +29,10 @@
                   outlined
                   required
                   color="#404b87"
+                  rounded
                 />
               </div>
-            </v-col>
-            <v-col cols="12">
+
               <div>
                 <v-text-field
                   label="Email*"
@@ -45,11 +42,10 @@
                   required
                   outlined
                   color="#404b87"
+                  rounded
                 />
               </div>
-            </v-col>
 
-            <v-col cols="12">
               <div>
                 <v-text-field
                   label="Telefono*"
@@ -58,19 +54,18 @@
                   required
                   outlined
                   color="#404b87"
+                  rounded
                 />
               </div>
-            </v-col>
-            <v-col cols="12">
+
               <v-select
-                :items="['Busco informacion General.', 'Me interesa formar parte de Peninsula.', ]"
-                label="Razón por contactar*"
+                :items="['Busco informacion general.', 'Me interesa un local.', ]"
+                label="Motivo de contacto*"
                 required
                 outlined
+                rounded
               ></v-select>
-            </v-col>
 
-            <v-col cols="12">
               <div>
                 <v-textarea
                   label="Mensaje*"
@@ -79,23 +74,30 @@
                   required
                   outlined
                   color="#404b87"
+                  rounded
                 />
               </div>
+
+              <div>
+                <v-container>
+                  <v-btn
+                    type="submit"
+                    value="Send message"
+                    block
+                    dark
+                    x-large
+                    rounded
+                    height="75px"
+                    class="alex"
+                  >
+                    <div class="headline">Agendar una cita</div>
+                  </v-btn>
+                </v-container>
+              </div>
+
             </v-col>
-            <div>
-              <v-container>
-                <v-btn
-                  type="submit"
-                  value="Send message"
-                  color="#404b87"
-                  dark
-                  block
-                  x-large
-                  outlined
-                >Enviar</v-btn>
-              </v-container>
-            </div>
           </v-row>
+
         </v-card>
       </v-container>
     </form>
@@ -103,6 +105,7 @@
 </template>
 <script>
 import SectionHeader from "~/components/SectionHeader";
+
 export default {
   components: { SectionHeader },
   data() {
@@ -134,3 +137,13 @@ export default {
   }
 };
 </script>
+<style scoped>
+.alex {
+  background-image: linear-gradient(
+    to top right,
+    #71a5d6 0%,
+    #5660c9 51%,
+    #343477 100%
+  );
+}
+</style>

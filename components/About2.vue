@@ -4,16 +4,22 @@
       <v-sheet>
         <v-container>
           <v-row>
-            <v-col cols="12" md="6">
-              <v-container fluid pa-0>
+            <v-col
+              cols="12"
+              md="6"
+            >
+              <v-container
+                fluid
+                pa-0
+              >
                 <v-row>
-                  <v-col cols="12" md="6" class="pa-0">
+                  <v-col
+                    cols="12"
+                    md="6"
+                    class="pa-0"
+                  >
                     <v-card-title></v-card-title>
-                    <v-card-text>
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </v-card-text>
+
                   </v-col>
 
                   <v-col cols="12">
@@ -32,7 +38,11 @@
               </v-container>
             </v-col>
 
-            <v-col cols="12" md="5" offset-md="1">
+            <v-col
+              cols="12"
+              md="5"
+              offset-md="1"
+            >
               <div>
                 <div>
                   <netlify />
