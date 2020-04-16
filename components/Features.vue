@@ -3,7 +3,7 @@
 
     <v-container class="text-start">
 
-      <v-row justify="space-around">
+      <v-row justify="center">
         <v-col
           cols="12"
           md="4"
@@ -21,27 +21,26 @@
                   :key="i"
                 >
                   <v-list-item-icon>
-                    <v-theme-provider dark>
-                      <div>
-                        <v-avatar
-                          color="#71A5D6"
-                          size="88"
-                        >
-                          <v-icon
-                            large
-                            v-text="icon"
-                          ></v-icon>
-                        </v-avatar>
-                      </div>
+                    <v-theme-provider light>
+
+                      <v-icon large>mdi-checkbox-marked-circle-outline</v-icon>
+
                     </v-theme-provider>
                   </v-list-item-icon>
 
                   <v-list-item-content>
-                    <v-card-title
-                      class="font-weight-black"
+                    <v-list-item-title
+                      class="font-weight-black headline"
                       v-text="title"
-                    ></v-card-title>
-                    <p v-text="text"></p>
+                    >
+
+                    </v-list-item-title>
+
+                    <v-list-item-action-text
+                      v-text="text"
+                      class="headline"
+                    ></v-list-item-action-text>
+
                   </v-list-item-content>
                 </v-list-item>
               </v-list-item-group>
@@ -64,32 +63,25 @@
                   :key="i"
                 >
                   <v-list-item-icon>
-                    <v-theme-provider dark>
-                      <div>
-                        <v-avatar
-                          color="#71A5D6"
-                          size="88"
-                        >
-                          <v-icon
-                            large
-                            v-text="icon"
-                          ></v-icon>
-                        </v-avatar>
-                      </div>
+                    <v-theme-provider light>
+
+                      <v-icon large>mdi-checkbox-marked-circle-outline</v-icon>
+
                     </v-theme-provider>
                   </v-list-item-icon>
 
                   <v-list-item-content>
-                    <v-card-title
-                      class="font-weight-black"
+                    <v-list-item-title
+                      class="font-weight-black headline"
                       v-text="title"
-                    ></v-card-title>
-                    <!-- <v-list-item-title
-                      class="justify-center font-weight-black text-uppercase"
-                      v-text="text"
-                    ></v-list-item-title> -->
+                    >
 
-                    <p v-text="text"></p>
+                    </v-list-item-title>
+
+                    <v-list-item-action-text
+                      v-text="text"
+                      class="headline"
+                    ></v-list-item-action-text>
 
                   </v-list-item-content>
                 </v-list-item>
@@ -111,51 +103,38 @@ export default {
       features: [
         {
           icon: "mdi-account-group-outline",
-          title: "Afluencia",
-          text:
-            "10 millones de personas al año 27,000 persona al día. Nivel Socioeconómico A / B."
+          title: "Afluencia Promedio",
+          text: "10 millones de personas al año de nivel socioeconómico A/B"
         },
         {
           icon: "mdi-account",
-          title: "Amenidades",
-          text:
-            "Estacionamiento de 3,400 cajones, 45,000 m2 de áreas comunes, y 3 parques recreativos"
+          title: "Shopping",
+          text: "64,000 m2 de fast fashion 21,000 m2 de Liverpool"
         },
         {
           icon: "mdi-home-modern",
-          title: "Hotel",
-          text: "De 180 habitaciones con la mejor calidad de servicio."
-        },
-
-        {
-          icon: " mdi-football",
-          title: "Vida Activa",
-          text:
-            "Cinepolis 15 salas (incluye VIP), arcadias, boliche, pista de patinaje, gimnasio, centro acquatico, spa, y mucho más."
+          title: "Destino Gastronomico",
+          text: "Mas de 20 restaurantes & bares foodhall y mercado gourmet"
         }
       ],
       features2: [
         {
           icon: "mdi-shopping",
-          title: "Area de Shopping",
-          text: "64,000 m2 de tiendas fast fashion y 21,000 m2 de Liverpool"
+          title: "Amenidades",
+          text: " 3,400 cajones de estacionamiento y 45,000 m2 de áreas comunes"
         },
         {
           icon: "mdi-movie",
-          title: "Entretenimiento",
+          title: "Hotel, Oficinas y  Departamentos",
           text:
-            "Cinepolis 15 salas (incluye VIP), arcadias, boliche, pista de patinaje, gimnasio, centro acquatico, spa, y mucho más."
+            "180 habitaciones de hotel, 10,000 m2 de oficina y 180 departamentos."
         },
 
         {
           icon: "mdi-food",
-          title: "Gastronomia",
-          text: "20+ restaurantes & bares foodhall y mercado gourmet."
-        },
-        {
-          icon: "mdi-home-modern",
-          title: "Oficinas y Departamentos",
-          text: "Torre oficina 10,000+ m2 y 180+ departamentos"
+          title: "Entretenimiento y Vida Activa",
+          text:
+            "Cinepolis 15 salas (incluye VIP), gimnasio, centro acquatico, spa,arcadias, boliche, y mucho más"
         }
       ],
       stats: [

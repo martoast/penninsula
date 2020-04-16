@@ -23,8 +23,8 @@
             min-width="175"
             outlined
             rounded
-            v-on="on"
             class="ml-6"
+            @click="$vuetify.goTo('#contact')"
           >
             Solicitar Info
           </v-btn>

@@ -2,7 +2,7 @@
   <div>
 
     <v-card
-      height="100vh"
+      height="90vh"
       color="transparent"
       class="d-flex pb-12 justify-center"
       flat
