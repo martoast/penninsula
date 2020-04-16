@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <v-toolbar
       height="55px"
       dark
@@ -7,46 +8,49 @@
       color="transparent"
       flat
     >
+      <v-row justify="space-around">
+        <div class="hidden-md-and-down ">
+          <v-card
+            outlined
+            tile
+            color="transparent"
+          >
+            <div class="hidden-md-and-down">
+              <VuetifyLogo />
+            </div>
+          </v-card>
+        </div>
 
-      <div class="hidden-md-and-down ma-12">
-        <v-card
-          class="pa-12"
-          outlined
-          tile
-          color="transparent"
-        >
-          <div class="hidden-md-and-down">
-            <VuetifyLogo />
+        <v-toolbar-items class="hidden-sm-and-down pt-12">
+          <v-btn
+            v-for="(item, i) in items"
+            :key="i"
+            :active-class="!isScrolling ? 'primary--text' : undefined"
+            text
+            x-large
+            @click="$vuetify.goTo(item.scroll)"
+          >
+            <span v-text="item.text" />
+          </v-btn>
+          <div class="pt-8">
+            <v-btn
+              color="white"
+              large
+              height="40px"
+              min-width="175"
+              outlined
+              rounded
+              v-on="on"
+              class="mr-12"
+            >
+              Solicitar Info
+            </v-btn>
+
           </div>
-        </v-card>
-      </div>
-      <v-spacer />
 
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn
-          v-for="(item, i) in items"
-          :key="i"
-          :active-class="!isScrolling ? 'primary--text' : undefined"
-          text
-          x-large
-          @click="$vuetify.goTo(item.scroll)"
-        >
-          <span v-text="item.text" />
-        </v-btn>
+        </v-toolbar-items>
 
-      </v-toolbar-items>
-      <v-btn
-        color="white"
-        large
-        height="40px"
-        min-width="175"
-        outlined
-        rounded
-        v-on="on"
-        class="mr-12"
-      >
-        Solicitar Info
-      </v-btn>
+      </v-row>
 
     </v-toolbar>
   </div>

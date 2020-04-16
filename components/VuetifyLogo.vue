@@ -11,8 +11,7 @@
   width: 180px;
   height: 90px;
 
-  margin-top: 55px;
-  margin-left: 55px;
+  margin-top: 50px;
 }
 
 @keyframes turn {
