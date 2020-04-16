@@ -28,6 +28,7 @@
           :key="i"
           :active-class="!isScrolling ? 'primary--text' : undefined"
           text
+          x-large
           @click="$vuetify.goTo(item.scroll)"
         >
           <span v-text="item.text" />
@@ -35,11 +36,14 @@
 
       </v-toolbar-items>
       <v-btn
-        height="25"
         color="white"
-        @click="$vuetify.goTo('#contact')"
-        light
-        class="mr-12 justify-space-around"
+        large
+        height="40px"
+        min-width="175"
+        outlined
+        rounded
+        v-on="on"
+        class="mr-12"
       >
         Solicitar Info
       </v-btn>

@@ -4,7 +4,7 @@
     <v-toolbar
       color="#404b87"
       dark
-      max-height="60px"
+      max-height="63px"
     >
       <v-container>
         <v-row
@@ -17,12 +17,14 @@
           </h2>
 
           <v-btn
-            large
-            height="25"
             color="white"
-            @click="$vuetify.goTo('#contact')"
-            light
-            class="ml-12"
+            large
+            height="40px"
+            min-width="175"
+            outlined
+            rounded
+            v-on="on"
+            class="ml-6"
           >
             Solicitar Info
           </v-btn>
