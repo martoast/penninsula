@@ -4,29 +4,11 @@
 
       <v-footer
         dark
-        height="auto"
+        height="200px"
         padless
         color="#404b87"
       >
-        <v-card
-          flat
-          tile
-          class="white--text text-center"
-          color="#404b87"
-          width="100%"
-        >
-          <v-card-text>
-            <v-btn
-              v-for="icon in icons"
-              :key="icon"
-              class="mx-4 white--text"
-              icon
-            >
-              <v-icon size="24px">{{ icon }}</v-icon>
-            </v-btn>
-          </v-card-text>
 
-        </v-card>
         <v-card
           class="flex"
           flat
@@ -37,53 +19,26 @@
             justify="space-around"
             align="center"
           >
-            <ul class="body-1 pa-0">
-              <li
-                v-for="(c, i) in company"
-                :key="i"
-                class="mb-3"
-              >
-                <a
-                  class="transition-swing"
-                  v-text="c.title"
-                  :href="c.link"
-                />
-              </li>
-            </ul>
+            <FooterLogo />
+            <!-- <h5>Copyright © 2020 Donald Miller Words, LLC. All rights reserved</h5> -->
+            <ul class="body-1">
+              <v-row>
 
-            <ul class="body-1 pa-0 justify-end">
+                <li
+                  v-for="(c, i) in company"
+                  :key="i"
+                >
 
-              <li
-                v-for="([icon, info1, info2], i) in details"
-                :key="i"
-              >{{info1}}<br> {{info2}}</li>
+                  <a
+                    class="transition-swing ma-5"
+                    v-text="c.title"
+                    :href="c.link"
+                  />
+                </li>
+              </v-row>
 
             </ul>
           </v-row>
-
-          <!-- <v-col
-              v-for="([icon, info1, info2], i) in details"
-              :key="i"
-              cols="12"
-              md="3"
-            >
-              <div class="hidden-md-and-down">
-                <div class="text-center">
-                  <v-icon
-                    size="34"
-                    class="mb-3"
-                    v-text="icon"
-                  />
-                  <div
-                    class="mb-2 headline"
-                    v-text="info1"
-                  />
-                  <div v-text="info2" />
-                </div>
-
-              </div>
-
-            </v-col> -->
 
         </v-card>
 
@@ -94,7 +49,11 @@
 </template>
 
 <script>
+import FooterLogo from "~/components/FooterLogo.vue";
 export default {
+  components: {
+    FooterLogo
+  },
   data: () => ({
     categories: [
       { title: "SEO Services", link: "/seo" },
@@ -105,9 +64,7 @@ export default {
     company: [
       { title: "Home", link: "/" },
       { title: "Proyecto", link: "/proyecto" },
-      { title: "Contacto", link: "/case-studies" },
-      { title: "Aviso de Privacidad", link: "/aviso-de-privacidad" },
-      { title: "Terminos y Condiciones", link: "/terminos&codiciones" }
+      { title: "Contacto", link: "/case-studies" }
     ],
     icons: [
       "mdi-facebook",
