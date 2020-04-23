@@ -21,14 +21,14 @@ export default {
     return {
       items: [
         {
-          src: require("@/assets/COMINGSOON.jpg")
+          src: require("@/assets/pen1.png")
         },
         {
-          src: require("@/assets/arialrender.png")
+          src: require("@/assets/pen2.png")
         },
 
         {
-          src: require("@/assets/2.jpg")
+          src: require("@/assets/pen3.png")
         }
       ]
     };
