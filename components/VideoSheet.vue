@@ -1,7 +1,16 @@
 <template>
-  <div class="pt-12">
+  <div>
+    <div class="pt-8 pb-8">
+      <SectionHeader
+        subHeader="'El mall del futuro es menos retail, más estilo de vida y espacios de entretenimiento.'"
+        text="-Ba"
+      />
+    </div>
+
     <section class="grey lighten-3">
+
       <v-container>
+
         <v-row
           align="center"
           justify="center"
@@ -14,19 +23,9 @@
 
             <div class="ma-12">
               <v-row justify="center">
-                <h2 class="mb-4 headline">
-                  We use the best platforms around!<br />
-                </h2>
 
                 <p class="subtitle-1">
-                  Etiam ultricies nisi vel augue. Nullam cursus lacinia erat. Donec
-                  vitae orci sed dolor rutrum auctor. Proin pretium, leo ac
-                  pellentesque mollis, felis nunc ultrices eros, sed gravida augue
-                  augue mollis justo. Lorem ipsum dolor sit amet, consectetuer
-                  adipiscing elit. Nullam nulla eros, ultricies sit amet, nonummy
-                  id, imperdiet feugiat, pede. Etiam rhoncus. Nullam dictum felis eu
-                  pede mollis pretium. Nullam accumsan lorem in dui. Vestibulum
-                  ullamcorper mauris at ligula.
+                  Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad.
                 </p>
 
                 <v-btn
@@ -49,20 +48,35 @@
             cols="12"
             md="5"
           >
+            <div>
 
-            <div align="center">
-              <v-container>
+              <v-img :src="require('@/assets/arialrender.png')">
+                <v-card
+                  height="100%"
+                  color="transparent"
+                >
+                  <v-row
+                    align="center"
+                    justify="center"
+                  >
+                    <div>
+                      <VideoDialog2 />
+                    </div>
 
-                <iframe
+                  </v-row>
+
+                </v-card>
+
+              </v-img>
+
+              <!-- <iframe
                   style="top:55px; left:0; bottom:0; right:0; height: 400px; border:none; margin:0; padding:0; z-index:999999;"
                   src="https://player.vimeo.com/video/408693447"
                   frameborder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                   width="100%"
-                ></iframe>
-
-              </v-container>
+                ></iframe> -->
 
             </div>
 
@@ -74,7 +88,10 @@
   </div>
 </template>
 <script>
+import SectionHeader from "~/components/SectionHeader.vue";
+import VideoDialog2 from "~/components/VideoDialog2.vue";
 export default {
+  components: { SectionHeader, VideoDialog2 },
   data() {
     return {};
   }

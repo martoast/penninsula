@@ -28,8 +28,8 @@
           >
             <h2 class="title font-weight-light text-center">
               <strong>
-                Todo lo que necesitas a
-                <br class="hidden-md-and-up" />10 minutos de tu casa.
+                ¡Todo lo que necesitas a
+                <br class="hidden-md-and-up" />10 minutos de tu casa!
               </strong>
             </h2>
           </v-row>

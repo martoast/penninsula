@@ -1,23 +1,21 @@
 <template>
   <div>
     <div>
-      <v-sheet height="300px">
-        <div>
-          <v-row justify="center">
-            <v-col cols="12">
-              <div class="pt-7">
-                <SectionHeader
-                  header="bienvenido a"
-                  subHeader="Un Destino de
-              Experiencias Nuevas."
-                  text="Península es un desarrollo emergente el cual busca ser un espacio social y de estilo de vida que refleje la identidad única de una Tijuana Cosmopolita conservando el encanto propio de la ciudad."
-                />
-              </div>
-            </v-col>
-          </v-row>
-        </div>
 
-      </v-sheet>
+      <div>
+        <v-row justify="center">
+          <v-col cols="12">
+            <div class="pt-7">
+              <SectionHeader
+                subHeader="Adios garitas, Hola Peninsula!"
+                text="Centro Comercial con oferta de primer nivel
+Apertura Primavera 2021"
+              />
+            </div>
+          </v-col>
+        </v-row>
+      </div>
+
       <div>
         <Features />
       </div>
