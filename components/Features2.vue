@@ -36,94 +36,36 @@
 
     <div class="hidden-md-and-down">
 
-      <v-row justify="center">
-        <v-col
-          cols="12"
-          md="4"
-        >
-
-          <v-card
-            class="mx-auto"
-            max-width="600"
-            flat
-          >
-            <v-list flat>
-              <v-list-item-group>
-                <v-list-item
-                  v-for="({ icon, title, text }, i) in features"
-                  :key="i"
+      <v-item-group multiple>
+        <v-container>
+          <v-row>
+            <v-col
+              v-for="n in FullFeatures"
+              :key="n.title"
+              cols="12"
+              md="4"
+            >
+              <v-item>
+                <v-card
+                  color="transparent"
+                  height="200"
+                  flat
                 >
-                  <v-list-item-icon>
-                    <v-theme-provider light>
 
-                      <v-icon large>mdi-checkbox-marked-circle-outline</v-icon>
+                  <v-row justify="center">
+                    <v-icon large>mdi-checkbox-marked-circle-outline</v-icon>
 
-                    </v-theme-provider>
-                  </v-list-item-icon>
+                  </v-row>
 
-                  <v-list-item-content>
-                    <v-list-item-title
-                      class="font-weight-black headline"
-                      v-text="title"
-                    >
+                  <v-card-title class="justify-center">{{n.title}}</v-card-title>
+                  <v-card-text class="justify-center">{{n.text}}</v-card-text>
 
-                    </v-list-item-title>
-
-                    <v-list-item-action-text
-                      v-text="text"
-                      class="headline"
-                    ></v-list-item-action-text>
-
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
-          </v-card>
-        </v-col>
-        <v-col
-          cols="12"
-          md="4"
-        >
-          <v-card
-            max-width="600"
-            flat
-          >
-            <v-list flat>
-              <v-list-item-group>
-                <v-list-item
-                  v-for="({ icon, title, text }, i) in features2"
-                  :key="i"
-                >
-                  <v-list-item-icon>
-                    <v-theme-provider light>
-
-                      <v-icon large>mdi-checkbox-marked-circle-outline</v-icon>
-
-                    </v-theme-provider>
-                  </v-list-item-icon>
-
-                  <v-list-item-content>
-                    <v-list-item-title
-                      class="font-weight-black headline"
-                      v-text="title"
-                    >
-
-                    </v-list-item-title>
-
-                    <v-list-item-action-text
-                      v-text="text"
-                      class="headline"
-                    ></v-list-item-action-text>
-
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list-item-group>
-            </v-list>
-          </v-card>
-
-        </v-col>
-
-      </v-row>
+                </v-card>
+              </v-item>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-item-group>
 
     </div>
 

@@ -17,7 +17,7 @@ Apertura Primavera 2021"
       </div>
 
       <div>
-        <Features />
+        <Features2 />
       </div>
 
     </div>
@@ -77,7 +77,7 @@ import SectionHeader from "~/components/SectionHeader.vue";
 import SlideGroup2 from "~/components/SlideGroup2.vue";
 import About from "~/components/About.vue";
 import About2 from "~/components/About2.vue";
-import Features from "~/components/Features.vue";
+import Features2 from "~/components/Features2.vue";
 import VideoSheet from "~/components/VideoSheet.vue";
 
 export default {
@@ -114,7 +114,7 @@ export default {
     SlideGroup2,
     About,
     About2,
-    Features,
+    Features2,
     VideoSheet
   },
 
