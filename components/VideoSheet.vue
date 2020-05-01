@@ -50,10 +50,14 @@
           >
             <div>
 
-              <v-img :src="require('@/assets/arialrender.png')">
+              <v-img
+                :src="require('@/assets/arialrender.png')"
+                gradient="to top, rgba(64, 75, 135, 0.5), rgba(25, 25, 38, .85)"
+              >
                 <v-card
                   height="100%"
                   color="transparent"
+                  class="d-flex pb-12 justify-center"
                 >
                   <v-row
                     align="center"
