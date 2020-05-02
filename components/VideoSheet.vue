@@ -13,7 +13,7 @@
 
         <v-row
           align="center"
-          justify="center"
+          justify="space-around"
         >
           <v-col
             cols="12"
@@ -101,3 +101,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+.videoParagraph {
+  padding-right: 12px;
+}
+</style>
