@@ -25,7 +25,7 @@ Apertura Primavera 2021"
     <section id="project">
       <v-container>
         <div>
-          <div>
+          <!-- <div>
             <v-row justify="center">
               <v-col cols="12">
                 <div>
@@ -33,7 +33,7 @@ Apertura Primavera 2021"
                 </div>
               </v-col>
             </v-row>
-          </div>
+          </div> -->
           <iframe
             allowfullscreen="true"
             title="panorama"

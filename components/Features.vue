@@ -88,7 +88,7 @@
             max-width="600"
             flat
           >
-            <v-list flat>
+            <v-list>
               <v-list-item-group>
                 <v-list-item
                   v-for="({ icon, title, text }, i) in features2"

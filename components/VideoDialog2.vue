@@ -6,7 +6,7 @@
     >
       <template v-slot:activator="{ on }">
         <v-btn
-          color="white"
+          color="transparent"
           x-large
           min-width="175"
           outlined
@@ -14,9 +14,9 @@
           v-on="on"
         >
           <v-icon
-            class="pr-1"
-            large
-          >mdi-play-circle</v-icon> Ver Video
+            color="white"
+            size="92"
+          >mdi-play-circle</v-icon>
         </v-btn>
       </template>
       <v-toolbar
