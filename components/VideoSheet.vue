@@ -1,10 +1,7 @@
 <template>
   <div>
     <div class="pt-8 pb-8">
-      <SectionHeader
-        subHeader="'El mall del futuro es menos retail, más estilo de vida y espacios de entretenimiento.'"
-        text="-Ba"
-      />
+      <SectionHeader subHeader="'El mall del futuro es menos retail, más estilo de vida y espacios de entretenimiento.'" />
     </div>
 
     <section class="grey lighten-3">

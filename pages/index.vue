@@ -7,9 +7,8 @@
           <v-col cols="12">
             <div class="pt-7">
               <SectionHeader
-                subHeader="Adios garitas, Hola Peninsula!"
-                text="Centro Comercial con oferta de primer nivel
-Apertura Primavera 2021"
+                subHeader="Un Destino De Experiencias Nuevas"
+                text="Características"
               />
             </div>
           </v-col>

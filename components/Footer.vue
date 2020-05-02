@@ -1,6 +1,49 @@
 <template>
   <div>
-    <div>
+    <div class="hidden-md-and-up">
+      <v-footer
+        dark
+        height="200px"
+        padless
+        color="#404b87"
+      >
+
+        <v-card
+          flat
+          tile
+          color="#404b87"
+        >
+          <v-row
+            justify="center"
+            align="center"
+          >
+            <FooterLogo />
+            <!-- <h5>Copyright © 2020 Donald Miller Words, LLC. All rights reserved</h5> -->
+            <ul class="body-1">
+              <v-row>
+
+                <li
+                  v-for="(c, i) in company"
+                  :key="i"
+                >
+
+                  <a
+                    class="transition-swing ma-5"
+                    v-text="c.title"
+                    :href="c.link"
+                  />
+                </li>
+              </v-row>
+
+            </ul>
+          </v-row>
+
+        </v-card>
+
+      </v-footer>
+
+    </div>
+    <div class="hidden-md-and-down">
 
       <v-footer
         dark
@@ -43,6 +86,7 @@
         </v-card>
 
       </v-footer>
+
     </div>
 
   </div>

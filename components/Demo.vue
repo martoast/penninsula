@@ -13,7 +13,7 @@
         >
           <h2 class="title font-weight-light text-center">
 
-            Explora todo lo que ofrece Peninsula!
+            ¡Todo lo que necesitas a 10 minutos de tu casa!
           </h2>
 
           <v-btn

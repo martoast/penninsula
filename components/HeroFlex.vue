@@ -19,17 +19,18 @@
           </v-row>
         </div>
 
-        <h1 class="mb-4 display-2 text-center">Primer Lifestyle Mall de Tijuana</h1>
+        <h1 class="mb-4 display-2 text-center">Adios Garitas, ¡Hola Península!</h1>
 
         <div>
           <v-row
             justify="center"
             align="center"
           >
-            <h2 class="title font-weight-light text-center">
+            <h2 class="title font-weight-light text-center pa-1">
               <strong>
-                ¡Todo lo que necesitas a
-                <br class="hidden-md-and-up" />10 minutos de tu casa!
+                Centro Comercial de primer nivel
+
+                <!-- <br class="hidden-md-and-up" />Apertura Primavera 2021 -->
               </strong>
             </h2>
           </v-row>
@@ -37,7 +38,7 @@
 
         <v-row justify="center">
           <h3>
-            <strong>Shop | Live | Work | Play</strong>
+            <strong>Apertura Primavera 2021</strong>
           </h3>
         </v-row>
 
